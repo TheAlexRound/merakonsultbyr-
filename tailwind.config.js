@@ -5,7 +5,12 @@ module.exports = {
       // Add more paths to your HTML, JS, or Vue components
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+            league: ['League Spartan', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          },
+      },
     },
     plugins: [],
   }

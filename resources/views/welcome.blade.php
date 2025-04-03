@@ -1,6 +1,4 @@
-@php
-    //$msg = 'Skickad! Vi hör av oss inom kort!';
-@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -59,13 +57,13 @@
         </style>
     </head>
 
-    <body class="flex flex-col items-center bg-gray-50">
+    <body class="flex flex-col items-center bg-gray-100">
         <!-- ========== HEADER ========== -->
         <header class="fixed inset-x-0 top-0 z-50 flex flex-wrap w-full text-sm md:justify-start md:flex-nowrap">
             <nav class="mt-4 relative md:max-w-2xl w-full bg-white border border-gray-200 shadow-xl rounded-4xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto">
                 <div class="flex items-center justify-between px-4 md:px-0">
                     <div class="flex flex-col items-center">
-                        <h1 class="text-4xl font-league text-[#b25659] tracking-tighter" aria-label="Mera Konsultbyrå">mera.</h1>
+                        <h1 class="text-4xl font-league text-[#b25659] tracking-tighter hover:cursor-pointer" aria-label="Mera Konsultbyrå" onclick="window.location.href='/'">mera.</h1>
                     </div>
 
                     <div class="md:hidden">
@@ -104,7 +102,7 @@
             </nav>
         </header>
         <main class="flex flex-col w-full ">
-            <div class="flex flex-col w-full min-h-screen p-2 pt-4 md:p-10 bg-gray-50 gap-y-16">
+            <div class="flex flex-col w-full min-h-screen p-2 pt-4 bg-gray-100 md:p-10 gap-y-16">
 
                 @if(session('msg'))
                     <div id="toast" class="fixed z-50 w-full max-w-sm transform -translate-x-1/2 -translate-y-1/2 bg-white border border-gray-200 shadow-lg top-28 left-1/2 rounded-4xl">
@@ -129,10 +127,10 @@
                             <h1 class="text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Redovisning på rätt sätt för att hijasdf fsdg.</h1>
                             <h2 class="text-lg tracking-tighter text-white md:text-2xl font-mont" aria-label="Mera Konsultbyrå">Bokför på rätt sätt. BokBokför på rätt sätt.fö BokBokför på rätt sätt.fö BokBokför på rätt sätt.för på rätt sätt. Bokför på rätt sätt. </h2>
                             <!--BUTTON 1-->
-                            <a href="#" class="relative mt-8 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-md group">
+                            <button onclick="scrollToSection('CTA')" class="relative hover:cursor-pointer mt-8 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-md group">
                                 <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease"><i class="text-white fa-solid fa-arrow-right"></i></span>
                                 <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-white transition-all duration-300 transform font-league group-hover:translate-x-full ease">Boka Möte</span><span class="relative invisible">Våra tjänster</span>
-                            </a>
+                            </button>
                             <!--BUTTON 2-->
                             <a href="/om-oss" class="mx-8 relative text-xl text-white cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
                             after:left-0 after:bottom-[-4px] hover:after:w-full after:transition-all after:duration-250">Om Oss</a>
@@ -146,14 +144,14 @@
                     </div>
                 </div>
                 <!--MAIN CONTENT-->
-                <div class="max-w-[1500px] mx-auto w-full space-y-32 bg-gray-50">
+                <div class="max-w-[1500px] mx-auto w-full space-y-32 bg-gray-100">
 
                     <!--SERVICES SECTION-->
                     <div class="flex flex-col gap-4 mb-12">
                         <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Våra tjänster</h2>
                         <div class="grid w-full grid-cols-1 md:grid-cols-[1fr_1.2fr_1fr] gap-6">
                             <!--CARD-->
-                            <div class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm group rounded-4xl hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
+                            <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm group rounded-4xl hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
                                 <div style="background-image: url('/img/type.jpg')" class="bg-cover rounded-b-none h-52 rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
@@ -164,13 +162,13 @@
                                     <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Titel</h4>
                                     <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi erbjuder skräddarsydda skattetjänster för företag och privatpersoner, inklusive skatteplanering och deklarationshjälp. Vårt expertteam säkerställer att du följer gällande skattelagar samtidigt som du optimerar din ekonomi.</p>
                                     <div class="flex justify-end w-full pt-2">
-                                        <a href="#" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
+                                        <a href="/tjanster" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
                                         after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
                                     </div>
                                 </div>
                             </div>
                             <!--CARD-->
-                            <div class="w-full col-span-1 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
+                            <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
                                 <div style="background-image: url('/img/laugh.jpg')" class="h-64 bg-bottom bg-cover rounded-b-none rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
@@ -187,7 +185,7 @@
                                 </div>
                             </div>
                             <!--CARD-->
-                            <div class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
+                            <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
                                 <div style="background-image: url('/img/point.jpg')" class="bg-cover rounded-b-none h-52 rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
@@ -205,10 +203,10 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center mt-8 mb-4">
-                            <a href="#" class="relative inline-flex items-center justify-center p-4 px-6 py-3 bg-white overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-lg group">
+                            <button onclick="scrollToSection('CTA')" class="relative hover:cursor-pointer inline-flex items-center justify-center p-4 px-6 py-3 bg-white overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-lg group">
                                 <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease"><i class="text-white fa-solid fa-arrow-right"></i></span>
                                 <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-[#b25659] transition-all duration-300 transform font-league group-hover:translate-x-full ease">Kontakta Oss</span><span class="relative invisible">Kontakta Oss</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
 
@@ -254,7 +252,7 @@
                                 </div>
                             </div>
                             <!--DOUBLECARD-->
-                            <div class="hover:cursor-pointer group w-full min-h-48 col-span-2 bg-radial-[at_55%_25%] shadow-lg border border-gray-200  from-[#db8a8f] from-25% to-[#b25659] to-90% rounded-4xl px-6 py-6 flex flex-col hover:scale-102 transition-all duration-300 hover:shadow-3xl">
+                            <div onclick="window.location.href='/om-oss'" class="hover:cursor-pointer group w-full min-h-48 col-span-2 bg-radial-[at_55%_25%] shadow-lg border border-gray-200  from-[#db8a8f] from-25% to-[#b25659] to-90% rounded-4xl px-6 py-6 flex flex-col hover:scale-102 transition-all duration-300 hover:shadow-3xl">
 
                                 <div  class="flex items-end justify-end w-full pb-6">
                                     <div>
@@ -352,9 +350,7 @@
                     </div>
 
                     <!-- CTA SECTION-->
-                    <div class="flex flex-col gap-4 mb-20">
-
-
+                    <div id="CTA" class="flex flex-col gap-4 mb-20 bg-white rounded-4xl">
                         <div class="relative bg-linear-to-bl from-[#f7e6e7] from-20% via-transparent rounded-4xl border border-gray-200 shadow-sm">
                             <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                             <!-- Grid -->
@@ -463,12 +459,12 @@
                     </div>
                 </div>
             </div>
-            <footer class="w-full border-t border-gray-200 bg-gray-50">
+            <footer class="w-full bg-white border-t border-gray-200">
                 <!-- ========== FOOTER ========== -->
                 <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
                     <!-- Grid -->
                     <div class="grid items-center grid-cols-1 gap-5 md:grid-cols-3">
-                      <div>
+                        <div class="hover:cursor-pointer" onclick="window.location.href='/'">
                         <h2 class="-ml-0.5 tracking-tighter text-[#b25659] text-6xl font-league" aria-label="Mera Konsultbyrå">mera.</h2>
                         <h2 class="-mt-3 text-md tracking-tight text-[#b25659] font-mont" aria-label="Mera Konsultbyrå">k o n s u l t b y r å</h2>
                       </div>
@@ -512,6 +508,18 @@
         </main>
 
     <script>
+
+        function scrollToSection(sectionId) {
+                const element = document.getElementById(sectionId);
+                const rect = element.getBoundingClientRect();
+                const scrollTo = window.scrollY + rect.top - 32;
+
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: 'smooth'
+                });
+            }
+
             document.addEventListener('DOMContentLoaded', function() {
                 const toggleButton = document.getElementById('navbar-toggle');
                 const menu = document.getElementById('navbar-menu');

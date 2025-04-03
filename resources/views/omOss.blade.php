@@ -54,13 +54,13 @@
         <link rel="canonical" href="https://www.merakonsultbyra.se/om-oss">
     </head>
 
-    <body class="flex flex-col items-center bg-gray-50">
+    <body class="flex flex-col items-center bg-gray-100">
         <!-- ========== HEADER ========== -->
         <header class="fixed inset-x-0 top-0 z-50 flex flex-wrap w-full text-sm md:justify-start md:flex-nowrap">
             <nav class="mt-4 relative md:max-w-2xl w-full bg-white border border-gray-200 shadow-xl rounded-4xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto">
                 <div class="flex items-center justify-between px-4 md:px-0">
                     <div class="flex flex-col items-center">
-                        <h1 class="text-4xl font-league text-[#b25659] tracking-tighter" aria-label="Mera Konsultbyrå">mera.</h1>
+                        <h1 class="text-4xl font-league text-[#b25659] tracking-tighter hover:cursor-pointer" aria-label="Mera Konsultbyrå" onclick="window.location.href='/'">mera.</h1>
                     </div>
 
                     <div class="md:hidden">
@@ -99,11 +99,11 @@
             </nav>
         </header>
         <main class="flex flex-col w-full ">
-            <div class="flex flex-col w-full min-h-screen p-2 pt-4 md:p-10 bg-gray-50 gap-y-16">
+            <div class="flex flex-col w-full min-h-screen p-2 pt-4 bg-gray-100 md:p-10 gap-y-16">
                 <!--HERO-->
 
                 <!--MAIN CONTENT-->
-                <div class="max-w-[1500px] mx-auto w-full space-y-32 bg-gray-50">
+                <div class="max-w-[1500px] mx-auto w-full space-y-32 bg-gray-100">
 
                     <!--SERVICES SECTION-->
 
@@ -211,7 +211,7 @@
                     </div>
 
                     <!--HISTORY SECTION-->
-                    <div class="flex flex-col gap-4 py-12 mb-32">
+                    <div class="flex flex-col gap-4 py-12 mb-20">
                         <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Exempel titel - Historia?</h2>
                         <div class="flex flex-col w-full gap-6 md:flex-row">
                             <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
@@ -277,7 +277,7 @@
                         </div>
                     </div>
                     <!-- CTA SECTION-->
-                    <div class="flex flex-col gap-4 mb-20">
+                    <div id="CTA" class="flex flex-col gap-4 mb-20 bg-white rounded-4xl">
 
 
                         <div class="relative bg-linear-to-bl from-[#f7e6e7] from-20% via-transparent rounded-4xl border border-gray-200 shadow-sm">
@@ -388,12 +388,12 @@
                     </div>
                 </div>
             </div>
-            <footer class="w-full border-t border-gray-200 bg-gray-50">
+            <footer class="w-full bg-white border-t border-gray-200">
                 <!-- ========== FOOTER ========== -->
                 <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
                     <!-- Grid -->
                     <div class="grid items-center grid-cols-1 gap-5 md:grid-cols-3">
-                      <div>
+                        <div class="hover:cursor-pointer" onclick="window.location.href='/'">
                         <h2 class="-ml-0.5 tracking-tighter text-[#b25659] text-6xl font-league" aria-label="Mera Konsultbyrå">mera.</h2>
                         <h2 class="-mt-3 text-md tracking-tight text-[#b25659] font-mont" aria-label="Mera Konsultbyrå">k o n s u l t b y r å</h2>
                       </div>
@@ -437,6 +437,17 @@
         </main>
 
         <script>
+
+            function scrollToSection(sectionId) {
+                const element = document.getElementById(sectionId);
+                const rect = element.getBoundingClientRect();
+                const scrollTo = window.scrollY + rect.top - 32;
+
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: 'smooth'
+                });
+            }
             document.addEventListener('DOMContentLoaded', function() {
                 const toggleButton = document.getElementById('navbar-toggle');
                 const menu = document.getElementById('navbar-menu');

@@ -1,47 +1,40 @@
-@php
-    //$msg = 'Skickad! Vi hör av oss inom kort!';
-@endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="language" content="sv">
 
-        <!-- SEO Meta Tags -->
-        <title>Mera Konsultbyrå | Redovisning & Bokföring</title>
-        <meta name="description" content="Mera Konsultbyrå erbjuder professionella tjänster inom redovisning, bokföring och ekonomisk rådgivning i Sverige. Kontakta oss för skräddarsydda lösningar.">
-        <meta name="keywords" content="Mera Konsultbyrå, redovisning, bokföring, ekonomisk rådgivning, företagsekonomi, skatt, moms, konsult, Sverige">
-        <meta name="author" content="Mera Konsultbyrå">
-        <meta name="robots" content="index, follow">
+        <!-- Title with Relevant Keywords -->
+        <title>Tjänster från Mera Konsultbyrå - Redovisning, Bokföring & Skatteplanering</title>
+        <meta name="description" content="Mera Konsultbyrå erbjuder professionella redovisningstjänster, bokföring, bokslut och skatteplanering för företag i Sverige. Vi hjälper dig att växa och effektivisera din ekonomi.">
+        <meta name="keywords" content="tjänster, redovisningstjänster, bokföring, bokslut, skatteplanering, Mera Konsultbyrå, redovisningsbyrå, ekonomitjänster, företagsredovisning, ekonomisk rådgivning">
 
-        <!-- Open Graph (For social media sharing) -->
-        <meta property="og:title" content="Mera Konsultbyrå | Redovisning & Bokföring">
-        <meta property="og:description" content="Vi erbjuder tjänster inom redovisning, bokföring och ekonomisk rådgivning för företag i Sverige.">
+        <!-- Language Meta Tag (for Swedish content) -->
+        <meta name="language" content="Swedish">
+
+        <!-- Open Graph Tags for Social Media Sharing -->
+        <meta property="og:title" content="Tjänster från Mera Konsultbyrå - Redovisning, Bokföring & Skatteplanering">
+        <meta property="og:description" content="Mera Konsultbyrå erbjuder professionella redovisningstjänster, bokföring, bokslut och skatteplanering för företag i Sverige. Vi hjälper dig att växa och effektivisera din ekonomi.">
         <meta property="og:image" content="{{ asset('img/logo.png') }}">
-        <meta property="og:url" content="https://www.merakonsult.se">
+        <meta property="og:url" content="https://www.merakonsultbyra.se/tjanster">
         <meta property="og:type" content="website">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Mera Konsultbyrå | Redovisning & Bokföring">
-        <meta name="twitter:description" content="Vi erbjuder professionella tjänster inom redovisning, bokföring och ekonomisk rådgivning i Sverige.">
+        <!-- Twitter Card Tags for Twitter Sharing -->
+        <meta name="twitter:title" content="Tjänster från Mera Konsultbyrå - Redovisning, Bokföring & Skatteplanering">
+        <meta name="twitter:description" content="Mera Konsultbyrå erbjuder professionella redovisningstjänster, bokföring, bokslut och skatteplanering för företag i Sverige. Vi hjälper dig att växa och effektivisera din ekonomi.">
         <meta name="twitter:image" content="{{ asset('img/logo.png') }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
-        <!-- Preconnect for Performance -->
+        <!-- Preconnect to improve performance -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet">
+        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <!-- Fonts -->
         <script src="https://kit.fontawesome.com/55b1c7ce83.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-        <!-- Styles & Scripts -->
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <!-- Inline Styles -->
         <style>
             .font-league {
                 font-family: "League Spartan", sans-serif;
@@ -53,10 +46,13 @@
             .font-mont {
                 font-family: "Montserrat", sans-serif;
                 font-optical-sizing: auto;
-                font-weight: normal;
+                font-weight: 400;
                 font-style: normal;
             }
         </style>
+
+        <!-- Canonical Link to prevent duplicate content issues -->
+        <link rel="canonical" href="https://www.merakonsultbyra.se/tjanster">
     </head>
 
     <body class="flex flex-col items-center bg-gray-50">
@@ -105,250 +101,13 @@
         </header>
         <main class="flex flex-col w-full ">
             <div class="flex flex-col w-full min-h-screen p-2 pt-4 md:p-10 bg-gray-50 gap-y-16">
-
-                @if(session('msg'))
-                    <div id="toast" class="fixed z-50 w-full max-w-sm transform -translate-x-1/2 -translate-y-1/2 bg-white border border-gray-200 shadow-lg top-28 left-1/2 rounded-4xl">
-                        <div class="flex items-center justify-between p-4">
-                            <div class="flex items-center">
-                                <i class="fa-solid fa-check text-[#b25659] text-2xl"></i>
-                                <p id="hs-toast-normal-example-label" class="text-gray-700 font-mont text-md ms-3">
-                                    {{session('msg')}}
-                                </p>
-                                <button onclick="document.getElementById('toast').style.display='none'" class="pl-8 text-gray-500 hover:text-gray-700 hover:cursor-pointer">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-
-                <!--HERO-->
-                <div style="background-image: url('/img/hero.jpg')" class="w-full bg-center bg-cover border border-gray-200 shadow-xl rounded-4xl">
-                    <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl flex items-end p-8 pt-96 md:p-12 md:pt-72 lg:pt-96">
-                        <div class="w-full border-4 border-[#b25659] py-8 border-x-0">
-                            <h1 class="text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Redovisning på rätt sätt för att hijasdf fsdg.</h1>
-                            <h2 class="text-lg tracking-tighter text-white md:text-2xl font-mont" aria-label="Mera Konsultbyrå">Bokför på rätt sätt. BokBokför på rätt sätt.fö BokBokför på rätt sätt.fö BokBokför på rätt sätt.för på rätt sätt. Bokför på rätt sätt. </h2>
-                            <!--BUTTON 1-->
-                            <a href="#" class="relative mt-8 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-md group">
-                                <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease"><i class="text-white fa-solid fa-arrow-right"></i></span>
-                                <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-white transition-all duration-300 transform font-league group-hover:translate-x-full ease">Boka Möte</span><span class="relative invisible">Våra tjänster</span>
-                            </a>
-                            <!--BUTTON 2-->
-                            <a href="/om-oss" class="mx-8 relative text-xl text-white cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
-                            after:left-0 after:bottom-[-4px] hover:after:w-full after:transition-all after:duration-250">Om Oss</a>
-                        </div>
-                        <div class="flex-col items-end justify-end hidden w-full md:flex">
-                            <div class="flex flex-col">
-                                <h2 class="-ml-1 tracking-tighter text-white text-7xl font-league" aria-label="Mera Konsultbyrå">mera.</h2>
-                                <h2 class="-mt-4 text-lg tracking-tight text-white font-mont" aria-label="Mera Konsultbyrå">k o n s u l t b y r å</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!--MAIN CONTENT-->
                 <div class="max-w-[1500px] mx-auto w-full space-y-32 bg-gray-50">
 
                     <!--SERVICES SECTION-->
-                    <div class="flex flex-col gap-4 mb-12">
-                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Våra tjänster</h2>
-                        <div class="grid w-full grid-cols-1 md:grid-cols-[1fr_1.2fr_1fr] gap-6">
-                            <!--CARD-->
-                            <div class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm group rounded-4xl hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/type.jpg')" class="bg-cover rounded-b-none h-52 rounded-4xl">
-                                    <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
-                                        <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
-                                        <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Skatt</h3>
-                                    </div>
-                                </div>
-                                <div class="p-6">
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Titel</h4>
-                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi erbjuder skräddarsydda skattetjänster för företag och privatpersoner, inklusive skatteplanering och deklarationshjälp. Vårt expertteam säkerställer att du följer gällande skattelagar samtidigt som du optimerar din ekonomi.</p>
-                                    <div class="flex justify-end w-full pt-2">
-                                        <a href="#" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
-                                        after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div class="w-full col-span-1 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/laugh.jpg')" class="h-64 bg-bottom bg-cover rounded-b-none rounded-4xl">
-                                    <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
-                                        <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
-                                        <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Redovisning</h3>
-                                    </div>
-                                </div>
-                                <div class="p-6">
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Titel</h4>
-                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi erbjuder professionell redovisningstjänst för både små och stora företag, så att du kan fokusera på din verksamhet. Våra tjänster omfattar bokföring, årsredovisningar och löpande rapportering, vilket säkerställer korrekt och uppdaterad ekonomisk information. Vi hjälper dig att hålla koll på dina siffror och följa gällande redovisningsregler för att maximera din företags effektivitet.</p>
-                                    <div class="flex justify-end w-full pt-2">
-                                        <a href="#" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
-                                        after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/point.jpg')" class="bg-cover rounded-b-none h-52 rounded-4xl">
-                                    <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
-                                        <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
-                                        <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Rådgivning</h3>
-                                    </div>
-                                </div>
-                                <div class="p-6">
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Titel</h4>
-                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi erbjuder professionell rådgivning inom ekonomi och affärsutveckling för att hjälpa ditt företag växa. Våra experter ger skräddarsydda lösningar anpassade efter dina behov och mål. Vi rådgiver dig när du behöver oss.</p>
-                                    <div class="flex justify-end w-full pt-2">
-                                        <a href="#" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
-                                        after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center mt-8 mb-4">
-                            <a href="#" class="relative inline-flex items-center justify-center p-4 px-6 py-3 bg-white overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-lg group">
-                                <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease"><i class="text-white fa-solid fa-arrow-right"></i></span>
-                                <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-[#b25659] transition-all duration-300 transform font-league group-hover:translate-x-full ease">Kontakta Oss</span><span class="relative invisible">Kontakta Oss</span>
-                            </a>
-                        </div>
-                    </div>
 
-                    <!--ABOUT SECTION-->
-                    <div class="flex flex-col gap-4 mb-32">
-                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Mera konsultbyrå</h2>
-
-                        <div class="grid w-full grid-cols-2 grid-rows-2 gap-6 md:grid-cols-3">
-                            <!--CARD-->
-                            <div style="background-image: url('/img/annakarin.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
-                                <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
-                                <div>
-                                    <h2 class="text-lg tracking-tighter text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Ekonomimorsan</h2>
-                                    <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Anna-Karin Nilsson</h2>
-                                </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div style="background-image: url('/img/elise.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
-                                <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
-                                <div>
-                                    <h2 class="text-lg tracking-tighter text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Komiker</h2>
-                                    <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Elise Nilsson</h2>
-                                </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div style="background-image: url('/img/annie.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
-                                <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
-                                <div>
-                                    <h2 class="text-lg tracking-tighter text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Hundansvarig</h2>
-                                    <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Annie Johansson</h2>
-                                </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div style="background-image: url('/img/moa.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
-                                <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
-                                <div>
-                                    <h2 class="text-lg tracking-tighter text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Bao-Bun fantast</h2>
-                                    <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Moa Lagerqvist</h2>
-                                </div>
-                                </div>
-                            </div>
-                            <!--DOUBLECARD-->
-                            <div class="hover:cursor-pointer group w-full min-h-48 col-span-2 bg-radial-[at_55%_25%] shadow-lg border border-gray-200  from-[#db8a8f] from-25% to-[#b25659] to-90% rounded-4xl px-6 py-6 flex flex-col hover:scale-102 transition-all duration-300 hover:shadow-3xl">
-
-                                <div  class="flex items-end justify-end w-full pb-6">
-                                    <div>
-                                        <h2 class="text-4xl tracking-tighter text-white -ml-0.5 font-league" aria-label="Mera Konsultbyrå">mera.</h2>
-                                        <h2 class="-mt-3 text-xs tracking-wide text-white font-mont" aria-label="Mera Konsultbyrå">konsultbyrå</h2>
-                                    </div>
-                                </div>
-                                <div class="flex items-center justify-around w-full pr-40">
-                                    <div class="flex flex-col items-center justify-center">
-                                        <h2 class="text-4xl tracking-tighter text-center text-white lg:text-6xl md:text-5xl font-league" >150+</h2>
-                                        <h2 class="text-lg tracking-tighter text-center text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Nöjda kunder genom åren.</h2>
-                                    </div>
-                                    <div class="flex-col items-center justify-center hidden md:flex">
-                                        <h2 class="text-4xl tracking-tighter text-center text-white lg:text-6xl md:text-5xl font-league" >20+</h2>
-                                        <h2 class="text-lg tracking-tighter text-center text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Års erfarenhet</h2>
-                                    </div>
-                                </div>
-                                <div  class="flex items-end justify-end w-full">
-                                    <a href="#" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out bg-white rounded-full shadow-xl">
-                                        <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease">Läs mer<i class="ml-2 text-white fa-solid fa-arrow-right"></i></span>
-                                        <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-[#b25659] transition-all duration-300 transform font-league group-hover:translate-x-full ease">Läs mer</span><span class="relative invisible">Våra tjänster</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--REVIEWCARD-->
-                            <div class="grid w-full grid-cols-1 gap-8 p-6 bg-white shadow-sm col-span-full sm:grid-cols-2 lg:grid-cols-4 rounded-4xl">
-                                <div class="flex flex-col items-center justify-center">
-                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Lucas Testsson</h4>
-                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Ni är bäst och er hund är gullig."</p>
-                                    <div class="flex items-start gap-1 pt-4">
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col items-center justify-center">
-                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Lucas Testsson</h4>
-                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Ni är bäst och er hund är gullig."</p>
-                                    <div class="flex items-start gap-1 pt-4">
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col items-center justify-center">
-                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Lucas Testsson</h4>
-                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Ni är bäst och er hund är gullig."</p>
-                                    <div class="flex items-start gap-1 pt-4">
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col items-center justify-center">
-                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Lucas Testsson</h4>
-                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Ni är bäst och er hund är gullig.  hund är gullig"</p>
-                                    <div class="flex items-start gap-1 pt-4">
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                        <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- USP SECTION-->
-                    <div class="flex flex-col gap-4 mb-32">
-                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Exempel titel - USP?</h2>
-                        <div class="flex flex-col w-full gap-6 md:flex-row">
-                            <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
-                                <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Exempel Titel</h4>
-                                <p class="text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Vi erbjuder professionella redovisnings- och skattetjänster för företag i alla storlekar. Med vår expertis säkerställer vi att din ekonomi hanteras korrekt och effektivt. Oavsett om du behöver bokföring, deklarationshjälp eller strategisk rådgivning, finns vi här för dig.</p>
-                                <h4 class="mt-4 text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Exempel Titel 2</h4>
-                                <p class="text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Vi erbjuder professionella redovisnings- och skattetjänster för företag i alla storlekar. Med vår expertis säkerställer vi att din ekonomi hanteras korrekt och effektivt. Oavsett om du beh.</p>
-
-                            </div>
-                            <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>
-                        </div>
+                    <div class="flex flex-col gap-4 pt-24 mb-24 ">
+                        <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Våra Tjänster.</h2>
                     </div>
 
                     <!-- CTA SECTION-->
@@ -556,23 +315,23 @@
             });
 
             document.getElementById("submitButton").addEventListener("click", function(event) {
-        let button = this;
-        let originalText = button.innerHTML;
+                let button = this;
+                let originalText = button.innerHTML;
 
-        // Change button to loading state with spinner
-        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Skickar...';
-        button.disabled = true;
+                // Change button to loading state with spinner
+                button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Skickar...';
+                button.disabled = true;
 
-        // Timeout to revert button text in case of a long submission (e.g., 8 seconds)
-        let revertTimeout = setTimeout(() => {
-            button.innerHTML = originalText;
-            button.disabled = false;
-        }, 8000);
+                // Timeout to revert button text in case of a long submission (e.g., 8 seconds)
+                let revertTimeout = setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }, 8000);
 
-        // Allow the form to submit naturally
-        // No need for preventDefault, because the form will submit when the button is clicked
-        document.getElementById("myForm").submit();
-        });
+                // Allow the form to submit naturally
+                // No need for preventDefault, because the form will submit when the button is clicked
+                document.getElementById("myForm").submit();
+                });
     </script>
 
 </html>

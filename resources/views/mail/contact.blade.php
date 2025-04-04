@@ -7,7 +7,8 @@
     <title>Ny kund från hemsidan!</title>
 </head>
 <body>
-    <h3>{{$name}} {{$surname}} har fyllt i formuläret på er hemsida!</h3>
+    <h3>{{$name}} har fyllt i formuläret på er hemsida!</h3>
+    <h4>{{$surname}}</h4>
     <h4>Deras e-postadress: {{$email}}</h4>
     <p>-</p>
     <p>Snyggt jobbat!</p>

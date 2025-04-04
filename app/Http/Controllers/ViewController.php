@@ -24,14 +24,14 @@ class ViewController extends Controller
         $validated = $request->validate([
             'email' => 'required|email',
             'name' => 'required|string|max:255',
-            'surname' => 'required|string|max:255',
+            'surname' => 'required|string',
         ]);
 
         $email = $validated['email'];
         $name = $validated['name'];
         $surname = $validated['surname'];
 
-        Mail::to('alexdkround@gmail.com')->send(new ContactForm($email, $name, $surname));
+        Mail::to('info@merakonsult.se')->send(new ContactForm($email, $name, $surname));
         return redirect()->route('welcome')->with('msg', 'Skickad! Vi hör av oss inom kort!');
     }
 }

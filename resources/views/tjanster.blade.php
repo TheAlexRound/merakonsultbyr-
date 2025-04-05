@@ -163,6 +163,128 @@
                         </div>
                     </div>
 
+                    <!-- FAQ SECTION -->
+
+                    <div class="flex flex-col mb-20">
+
+                        <div class="w-full px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
+                            <!-- Grid -->
+                            <div class="grid gap-10 md:grid-cols-5">
+                                <div class="md:col-span-2">
+                                    <div class="w-full md:max-w-xs ">
+                                        <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våanliga frågor">Vanliga Frågor.</h2>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="md:col-span-3">
+                                    <!-- Accordion -->
+                                    <div class="divide-y divide-gray-200 hs-accordion-group">
+
+                                        <!--ITEM-->
+                                        <div class="pb-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Vad gör en redovisningsbyrå?
+                                              <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                              <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                              <p class="pt-2 text-gray-800 font-mont">
+                                                En redovisningsbyrå sköter företags redovisning genom löpande bokföring, bokslut/årsredovisning och deklarationer. Många redovisningsbyråer sköter även lönehantering och kan hjälpa till att sätta upp rutiner och system för ekonomisk hantering i ett företag. Vi på Mera Konsultbyrå hjälper dig med allt som rör företagande, oavsett om det är löpande under året, endast vid bokslut eller punktinsatser där det behövs.
+                                              </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Kan jag göra min egen bokföring?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Alla kan med rätt verktyg och kunskap sköta sin egen bokföring, men många väljer att med fördel ta hjälp av en redovisningsbyrå i alla fall för de moment som kräver mer expertis. Exempelvis kan vissa kunder bokföra sina egna kvitton och fakturera sina kunder, medan vi som redovisningsbyrå kontrollerar bokföringen och ser att allt blir korrekt inlagt samt gör bokslut, årsredovisning och deklarationer.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Vad kostar en redovisningskonsult?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Kostnaden för en redovisningskonsult beror helt på din verksamhet och hur ditt behov ser ut. Vi arbetar både på löpande timpeng och fastpris om så önskas. Boka ett kostnadsfritt första möte idag och få en offert på plats.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Hjälper ni både aktiebolag och enskild firma?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Ja! Vi hjälper dig oavsett företagsform, och kan även rådge dig vilken företagsform som passar just dig bäst. Vi hjälper även till när du vill övergå från en företagsform till en annan, exempelvis från en enskild firma till ett aktiebolag.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Vad är skillnaden på redovisningskonsult och revisor?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Många kallar oss redovisningskonsulter för revisorer, men det är egentligen två ganska olika yrken. Vi redovisningskonsulter bokför alla ekonomiska händelser i ett bolag och upprättar rapporter och deklarationer utefter bokföringen. En revisor arbetar istället med att granska det arbete som vi har upprättat för att se att allt har skötts korrekt. Det finns inget krav på att ha en redovisningskonsult men vissa företag har krav på revisor. Gränsen för att behöva ha en revisor går när två av tre gränsvärden är uppnådda två år i rad.
+                                                    <br>Gränsvärdena är:
+                                                    <br><br>- Fler än 3 anställda (i medeltal)
+                                                    <br>- Mer än 1,5 miljoner kr i balansomslutning
+                                                    <br>- Mer än 3 miljoner kronor i nettoomsättning
+                                                    <br><br>Osäker på om du har uppnått gränsvärdena och behöver en revisor? Kontakta oss så hjälper vi dig.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Behöver alla företag få hjälp av en redovisningsbyrå?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Det är inget krav att ha en redovisningskonsult som företag, men alla företag kan gynnas av en redovisningskonsult. Därför rekommenderar vi alltid företag att ta hjälp av en redovisningsbyrå (självklart utan egen baktanke) men i olika utsträckning beroende på behov. Exempelvis kan mindre företag som inte själva har behov av en ekonomiavdelning anlita en redovisningsbyrå att sköta all redovisning för att slippa göra det själva medan ett större bolag kan anlita en redovisningsbyrå för stöd under bokslutsarbetet eller för att effektivisera befintliga ekonomiska processer. I vilken utsträckning vi hjälper våra kunder är alltid upp till kunden, boka in ett kostnadsfritt första möte så ser vi vad vi kan göra för just ditt företag.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    <!-- End Accordion -->
+                                    </div>
+                                <!-- End Col -->
+                                </div>
+                                <!-- End Grid -->
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- CTA SECTION-->
                     <div id="CTA" class="flex flex-col gap-4 mb-20 bg-white rounded-4xl">
 
@@ -316,6 +438,38 @@
         </main>
 
     <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".hs-accordion-toggle").forEach((button) => {
+      button.addEventListener("click", () => {
+        const parent = button.closest(".hs-accordion");
+        const content = parent.querySelector(".hs-accordion-content");
+        const arrows = button.querySelectorAll("svg");
+
+        // Toggle active class
+        parent.classList.toggle("active");
+
+        // Animate height
+        if (parent.classList.contains("active")) {
+          content.style.height = content.scrollHeight + "px";
+          button.setAttribute("aria-expanded", "true");
+
+          // Change arrow direction (down to up)
+          arrows[0].classList.add("hidden"); // Down arrow becomes hidden
+          arrows[1].classList.remove("hidden"); // Up arrow becomes visible
+        } else {
+          content.style.height = content.scrollHeight + "px"; // Set current height for transition
+          requestAnimationFrame(() => {
+            content.style.height = "0px"; // Collapse to 0 height
+          });
+          button.setAttribute("aria-expanded", "false");
+
+          // Change arrow direction (up to down)
+          arrows[1].classList.add("hidden"); // Up arrow becomes hidden
+          arrows[0].classList.remove("hidden"); // Down arrow becomes visible
+        }
+      });
+    });
+  });
             function scrollToSection(sectionId) {
                 const element = document.getElementById(sectionId);
                 const rect = element.getBoundingClientRect();

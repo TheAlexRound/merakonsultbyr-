@@ -106,7 +106,7 @@
                 <div class="max-w-[1500px] mx-auto w-full space-y-32 pt-12 bg-gray-100">
 
                     <!--HISTORY SECTION-->
-                    <div class="flex flex-col gap-4 py-12 mb-20">
+                    <div class="flex flex-col gap-4 py-12 pt-20 mb-20 md:pt-12">
                         <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Om oss.</h2>
                         <div class="flex flex-col w-full gap-6 md:flex-row">
                             <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
@@ -265,6 +265,20 @@
                                             <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">moa@merakonsult.se</p>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="flex flex-col w-full gap-12 bg-white shadow-sm md:flex-row rounded-4xl">
+                                <div style="background-image: url('/img/bosse.jpg')" class="w-full max-w-64 mx-auto m-6 -mb-2 md:m-0 shadow-sm md:max-w-sm bg-[center_top_-1rem] bg-cover md:rounded-r-none md:rounded-l-4xl md:rounded-4xl aspect-square rounded-full"></div>
+                                <div class="flex flex-col gap-1 px-6 pt-0 pb-12 md:pt-12">
+                                    <div class="border-b-4 w-1/8 md:w-1/12 mb-2 border-[#b25659]"></div>
+                                    <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Glädjespridare</h4>
+                                    <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Bosse</h3>
+                                    <div class="pt-4">
+                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Som den officiella kontorshunden på Mera Konsultbyrå har jag den viktiga uppgiften att hälsa alla kunder välkomna, be om att bli kliad på magen när alla är som mest stressade och slicka bort allt smink precis innan möten.</p>
+                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Jag mutas enklast med ost och uppmärksamhet, och känner personligen att jag tillför det där lilla extra till byrån med min extrema professionalism! </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

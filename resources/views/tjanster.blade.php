@@ -172,7 +172,7 @@
                             <div class="grid gap-10 md:grid-cols-5">
                                 <div class="md:col-span-2">
                                     <div class="w-full md:max-w-xs ">
-                                        <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våanliga frågor">Vanliga Frågor.</h2>
+                                        <h2 class="text-4xl text-center md:text-left mb-8 tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våanliga frågor">Vanliga Frågor.</h2>
                                     </div>
                                 </div>
                                 <!-- End Col -->

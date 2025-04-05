@@ -137,7 +137,7 @@
                         </div>
                         <div class="flex-col items-end justify-end hidden w-full md:flex">
                             <div class="flex flex-col">
-                                <img src="/img/mera-white.png" class="w-40 bg-cover" alt=""></div>
+                                <img src="/img/mera-white.png" class="w-40 bg-cover" alt="Mera konsultbyrå logga" style="width:160px;"></div>
                         </div>
                     </div>
                 </div>
@@ -252,7 +252,7 @@
 
                                 <div  class="flex items-end justify-end w-full pb-6">
                                     <div>
-                                        <img src="/img/mera-white.png" class="w-24 bg-cover">
+                                        <img src="/img/mera-white.png" class="w-24 bg-cover" style="width:96px;">
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-around w-full pr-40">
@@ -460,7 +460,7 @@
                     <!-- Grid -->
                     <div class="grid items-center grid-cols-1 gap-5 md:grid-cols-3">
                         <div class="hover:cursor-pointer" onclick="window.location.href='/'">
-                            <img src="/img/mera-red-b.png" class="object-cover w-48" alt="">
+                            <img src="/img/mera-red-b.png" class="object-cover w-48" alt="" style="width:192px;">
                         </div>
                       <!-- End Col -->
 

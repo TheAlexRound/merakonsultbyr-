@@ -60,7 +60,7 @@
             <nav class="mt-4 relative md:max-w-2xl w-full bg-white border border-gray-200 shadow-xl rounded-4xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto">
                 <div class="flex items-center justify-between px-4 md:px-0">
                     <div class="flex flex-col items-center">
-                        <img onclick="window.location.href='/'" src="/img/mera-red.png" class="w-24 bg-cover hover:cursor-pointer" alt="">
+                        <img onclick="window.location.href='/'" src="/img/mera-red.png" class="w-24 bg-cover hover:cursor-pointer" alt="" style="width:96px;">
                     </div>
 
                     <div class="md:hidden">
@@ -387,7 +387,7 @@
                     <!-- Grid -->
                     <div class="grid items-center grid-cols-1 gap-5 md:grid-cols-3">
                         <div class="hover:cursor-pointer" onclick="window.location.href='/'">
-                            <img src="/img/mera-red-b.png" class="object-cover w-48" alt="">
+                            <img src="/img/mera-red-b.png" class="object-cover w-48" alt="" style="width:192px;">
                         </div>
                       <!-- End Col -->
 

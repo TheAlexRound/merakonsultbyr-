@@ -221,7 +221,7 @@
                                 </div>
                             </div>
                             <!--CARD-->
-                            <div style="background-image: url('/img/elise.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-9rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
+                            <div style="background-image: url('/img/elise.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-2rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-8rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
                                 <div>
                                     <h2 class="tracking-tighter text-white text-md md:text-xl font-mont" aria-label="Mera Konsultbyrå">Redovisningskonsult</h2>

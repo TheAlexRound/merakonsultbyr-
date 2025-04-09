@@ -107,7 +107,7 @@
 
                     <!--HISTORY SECTION-->
                     <div class="flex flex-col gap-4 pt-12 pb-12 mb-20 ">
-                        <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Om oss.</h2>
+                        <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl my-4 mb-8 font-league">Om oss.</h2>
                         <div class="flex flex-col w-full gap-6 md:flex-row">
                             <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
                                 <p class="text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Vi är fyra engagerade redovisningskonsulter som efter flera års samarbete på olika byråer valde att gå ihop och starta vår egen – MERA Konsultbyrå. Sedan januari 2024 finns vi i Borås, med kunder i hela Sjuhäradsområdet. <br><br></p>

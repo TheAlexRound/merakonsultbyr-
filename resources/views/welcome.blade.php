@@ -124,16 +124,16 @@
                 <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover border border-gray-200 shadow-xl rounded-4xl">
                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl flex items-end p-8 pt-96 md:p-12 md:pt-72 lg:pt-96">
                         <div class="w-full border-4 border-[#b25659] py-8 border-x-0">
-                            <h1 class="text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Lite mera än bara redovisning</h1>
+                            <h1 class="text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Lite <a class="text-[#b25659]">mera</a> än bara redovisning</h1>
                             <h2 class="text-lg tracking-tighter text-white md:text-2xl font-mont" aria-label="Mera Konsultbyrå">Med lång erfarenhet inom såväl redovisning och affärsutveckling som eget företagande hjälper vi entreprenörer bli bättre företagare. </h2>
                             <!--BUTTON 1-->
                             <button onclick="scrollToSection('CTA')" class="relative hover:cursor-pointer mt-8 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-md group">
                                 <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease"><i class="text-white fa-solid fa-arrow-right"></i></span>
-                                <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-white transition-all duration-300 transform font-league group-hover:translate-x-full ease">Kontakta Oss</span><span class="relative invisible">Våra tjänster</span>
+                                <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-white transition-all duration-300 transform font-league group-hover:translate-x-full ease">Kontakt</span><span class="relative invisible">Kontakt</span>
                             </button>
                             <!--BUTTON 2-->
                             <a href="/om-oss" class="mx-8 relative text-xl text-white cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
-                            after:left-0 after:bottom-[-4px] hover:after:w-full after:transition-all after:duration-250">Om Oss</a>
+                            after:left-0 after:bottom-[-4px] hover:after:w-full after:transition-all after:duration-250">Om oss</a>
                         </div>
                         <div class="flex-col items-end justify-end hidden w-full md:flex">
                             <div class="flex flex-col">
@@ -146,7 +146,7 @@
 
                     <!--SERVICES SECTION-->
                     <div class="flex flex-col gap-4 mb-12">
-                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Våra tjänster</h2>
+                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Våra tjänster.</h2>
                         <div class="grid w-full grid-cols-1 md:grid-cols-[1fr_1.2fr_1fr] gap-6">
                             <!--CARD-->
                             <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                                 <div class="p-6">
-                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vår filosofi är att bättre företagande börjar med rätt stöd. Vi erbjuder rådgivning inom allt som rör ditt företagande; från vilken bolagsform som passar dig bäst till hur du kan växla upp din verksamhet för att ta den till nästa nivå. Oavsett vart du är i din företagar-resa finns vi här som din högra hand på vägen.</p>
+                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vår filosofi är att bättre företagande börjar med rätt stöd. Vi erbjuder rådgivning i stort och smått – från val av bolagsform och uppstart till hur du kan utveckla din verksamhet och ta nästa steg. Oavsett var du befinner dig i din företagarresa finns vi vid din sida med insikter, bollplank och praktisk hjälp. Vi tror på ett nära samarbete där du får trygghet, tydlighet och inspiration att växa – både som företagare och som person.</p>
                                     <div class="flex justify-end w-full pt-2">
                                         <a href="#" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
                                         after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
@@ -174,7 +174,9 @@
                                     </div>
                                 </div>
                                 <div class="p-6">
-                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Får du migrän av papper och siffror? Vi tar hand om hela din redovisning – från bokföring och löner till bokslut och årsredovisning. Oavsett om du vill lämna över allt eller bara vissa delar anpassar vi oss efter dina behov. <br><br>Digitalt, effektivt och alltid med personlig kontakt – så du kan fokusera på det du gör bäst.</p>
+                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Får du migrän av papper och siffror? Lugn, vi tar hand om hela din redovisning – allt från löpande bokföring och löner till bokslut och årsredovisning. Oavsett om du vill lämna över allt eller bara vissa delar skräddarsyr vi en lösning som passar dig och ditt företag.
+                                        <br><br>Vi jobbar digitalt och effektivt, men alltid med en personlig kontakt som har koll på både siffrorna och verksamheten. Så att du kan fokusera på det du gör bäst – medan vi håller ordning på resten.
+                                    </p>
                                     <div class="flex justify-end w-full pt-2">
                                         <a href="#" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
                                         after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
@@ -190,7 +192,8 @@
                                     </div>
                                 </div>
                                 <div class="p-6">
-                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Har du skatte-allergi eller är du kanske bara lite överkänslig..? Vårt mål är att du varken ska betala för mycket eller för lite skatt, lagom skatt helt enkelt. Vi hjälper dig med din privata deklaration, bolagsdeklaration och allt som rör skatteplanering. Oavsett om du driver en enskild firma, aktiebolag eller bara är en privatperson som behöver hjälp med din deklaration!</p>
+                                    <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Skattefrågor kan kännas snåriga – även för den mest rutinerade företagaren. Vi hjälper dig att förstå reglerna, undvika fallgropar och se till att du betalar rätt skatt, varken mer eller mindre. Oavsett om du är privatperson, driver enskild firma eller aktiebolag finns vi här som ett stöd i både deklarationer och strategisk skatteplanering. Med rätt hjälp blir det enklare att fatta kloka beslut, i rätt tid.
+                                    </p>
                                     <div class="flex justify-end w-full pt-2">
                                         <a href="/tjanster" class="relative text-xl text-gray-800 cursor-pointer font-league after:bg-[#b25659] after:absolute after:h-0.5 after:w-0
                                         after:left-0 after:bottom-[-4px] group-hover:after:w-full after:transition-all after:duration-250">Läs mer &rarr;</a>
@@ -490,8 +493,11 @@
 
                       <!-- Social Brands -->
                       <div class="space-x-2 text-center md:text-end">
-                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="https://www.linkedin.com/company/mera-konsultbyr%C3%A5-ab/">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-10 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="https://www.linkedin.com/company/mera-konsultbyr%C3%A5-ab/">
+                            <i class="text-lg fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-10 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="mailto:info@merakonsult.se">
+                            <i class="text-lg fa-solid fa-envelope"></i>
                         </a>
                       </div>
                       <!-- End Social Brands -->

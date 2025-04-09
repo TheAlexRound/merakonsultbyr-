@@ -106,7 +106,7 @@
                 <div class="max-w-[1500px] mx-auto w-full space-y-32 pt-12 bg-gray-100">
 
                     <!--HISTORY SECTION-->
-                    <div class="flex flex-col gap-4 py-12 pt-20 mb-20 md:pt-12">
+                    <div class="flex flex-col gap-4 py-12 pt-16 mb-20 md:pt-12">
                         <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Om oss.</h2>
                         <div class="flex flex-col w-full gap-6 md:flex-row">
                             <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
@@ -183,13 +183,13 @@
                                     <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Affärskonsult</h4>
                                     <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Anna-Karin Nilsson</h3>
                                     <div class="pt-4">
-                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Jag startade min första redovisningsbyrå år 2006, så jag vet ett och annat om både redovisning och företagande. </p>
-                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi brukar skämtsamt säga att jag är som en ekonomi-morsa åt mina kunder; jag hjälper dem oavsett vad de behöver hjälp med och de ska aldrig vara rädda att fråga mig när de blir osäkra på något. Det är dock bättre att fråga om tillåtelse än förlåtelse…</p>
+                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Jag startade min första redovisningsbyrå 2006 och sålde den 2020 – men det dröjde inte länge innan jag var tillbaka i branschen. Redovisning och företagande är min passion, och det är helt enkelt för roligt att få vara med och stötta entreprenörer i deras vardag för att kunna hålla sig borta.</p>
+                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi brukar skämta om att jag är lite som en ekonomi-morsa för mina kunder – någon som alltid finns där, oavsett vad det gäller. Det finns inga dumma frågor, och jag vill att mina kunder alltid ska känna att de kan höra av sig, hur små eller stora funderingarna än är. Det är ju trots allt bättre att fråga om tillåtelse än förlåtelse.</p>
                                     </div>
                                     <div class="flex flex-col gap-4 pt-4 mt-auto -mb-2 sm:gap-10 md:flex-row">
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-phone text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46702606535</p>
+                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46 70-260 65 35</p>
                                         </div>
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-envelope text-[#b25659]"></i>
@@ -204,15 +204,15 @@
                                 <div class="flex flex-col gap-1 px-6 pt-0 pb-12 md:pt-12">
                                     <div class="border-b-4 w-1/8 md:w-1/12 mb-2 border-[#b25659]"></div>
                                     <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Redovisningskonsult</h4>
-                                    <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="MERA">Elise Nilssion</h3>
+                                    <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="MERA">Elise Nilsson</h3>
                                     <div class="pt-4">
-                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Min resa som redovisningskonsult började som 14-åring när jag stod i mammas kontor och knappade dagskassor. Av någon anledning tyckte jag att det där med pappersarbete var ju inte alls så tråkigt som alla sa!</p>
-                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Jag lockades av alla drivna entreprenörer som behövde hjälp att förverkliga sina affärsidéer. Efter min kandidatexamen i ekonomi blev det därför ett självklart val att fortsätta jobba mot den drömmen och idag får jag jobba med en rad olika människor inom helt spridda yrken att driva just deras företag framåt. </p>
+                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Man kan säga att jag halkade in i redovisningsvärlden ovanligt tidigt. Som 14-åring stod jag på mammas kontor och knappade dagskassor – och till min förvåning tyckte jag faktiskt att det var rätt kul. Det var något med kombinationen av ordning och entreprenörsanda som verkligen fångade mig redan då.</p>
+                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Sedan dess har intresset bara vuxit. Efter min kandidatexamen i ekonomi visste jag att det var precis här jag ville vara – mitt i småföretagens vardag. I dag jobbar jag med kunder i många olika branscher och faser, och det bästa jag vet är att få vara med på deras resa och hjälpa dem framåt, steg för steg. För mig handlar redovisning inte bara om siffror, utan om relationer, förtroende och att finnas där när det behövs.</p>
                                     </div>
                                     <div class="flex flex-col gap-4 pt-4 mt-auto -mb-2 sm:gap-10 md:flex-row">
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-phone text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46768350445</p>
+                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46 76-835 04 45</p>
                                         </div>
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-envelope text-[#b25659]"></i>
@@ -235,7 +235,7 @@
                                     <div class="flex flex-col gap-4 pt-4 mt-auto -mb-2 sm:gap-10 md:flex-row">
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-phone text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46735140261</p>
+                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46 73-514 02 61</p>
                                         </div>
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-envelope text-[#b25659]"></i>
@@ -258,7 +258,7 @@
                                     <div class="flex flex-col gap-4 pt-4 mt-auto -mb-2 sm:gap-10 md:flex-row">
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-phone text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46735067722</p>
+                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46 73-506 77 22</p>
                                         </div>
                                         <div class="flex items-center gap-2">
                                             <i class="fa-solid fa-envelope text-[#b25659]"></i>
@@ -275,8 +275,7 @@
                                     <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Glädjespridare</h4>
                                     <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Bosse</h3>
                                     <div class="pt-4">
-                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Som den officiella kontorshunden på Mera Konsultbyrå har jag den viktiga uppgiften att hälsa alla kunder välkomna, be om att bli kliad på magen när alla är som mest stressade och slicka bort allt smink precis innan möten.</p>
-                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Jag mutas enklast med ost och uppmärksamhet, och känner personligen att jag tillför det där lilla extra till byrån med min extrema professionalism! </p>
+                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Som officiell kontorshund på Mera Konsultbyrå har jag det viktiga uppdraget att hälsa alla kunder välkomna, tigga efter kli på magen och busa vid de mest olämpliga av tillfällen. <br><br>Jag mutas enklast med ost och uppmärksamhet, och känner personligen att jag tillför det där lilla extra till byrån med min extrema professionalism!</p>
                                     </div>
 
                                 </div>
@@ -426,8 +425,11 @@
 
                       <!-- Social Brands -->
                       <div class="space-x-2 text-center md:text-end">
-                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="https://www.linkedin.com/company/mera-konsultbyr%C3%A5-ab/">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-10 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="https://www.linkedin.com/company/mera-konsultbyr%C3%A5-ab/">
+                            <i class="text-lg fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-10 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="mailto:info@merakonsult.se">
+                            <i class="text-lg fa-solid fa-envelope"></i>
                         </a>
                       </div>
                       <!-- End Social Brands -->

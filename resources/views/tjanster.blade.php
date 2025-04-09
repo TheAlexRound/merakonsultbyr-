@@ -114,14 +114,14 @@
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl rounded-b-none rounded-t-4xl md:rounded-r-none md:rounded-l-4xl flex justify-center items-center p-8">
                                     <div class="w-full flex flex-col gap-4 border-4 border-[#b25659] py-12 md:py-24 border-x-0">
                                         <h3 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league" aria-label="Redovisning">Redovisning</h3>
-                                        <p class="text-lg tracking-tighter text-white max-w-2/3 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Vill du fokusera på att utveckla ditt företag – istället för att fastna i kvitton, konton och deadlines? Då har du hittat rätt.</p>
+                                        <p class="text-lg tracking-tighter text-white max-w-2/3 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Vill du fokusera på att utveckla ditt företag – istället för att fastna i kvitton, siffror och deadlines? Då har du hittat rätt.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-full px-8 py-12 bg-white rounded-t-none md:rounded-l-none md:rounded-r-4xl rounded-4xl">
                                 <h4 class="mb-8 text-center md:text-left tracking-tighter text-[#b25659] lg:text-4xl text-3xl font-league" aria-label="Våra tjänster">Redovisning som funkar - på riktigt.</h4>
-                                <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Redovisning ska inte kännas som ett nödvändigt ont – det ska fungera, ge dig koll och frigöra tid till det som är viktigare. Hos oss får du en helhetslösning anpassad efter just din verksamhet. Vi sköter allt från bokföring och kvitton till löner, moms, bokslut och årsredovisning, på ett sätt som är både digitalt och personligt.<br><br></p>
-                                <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi tror inte på dussinlösningar. I stället lär vi känna dig och ditt företag på riktigt, så att vi kan anpassa vårt arbete efter dina behov. Vårt mål är att det ska vara enkelt för dig att driva ditt företag – och samtidigt känna dig trygg med att allt bakom kulisserna fungerar som det ska. Vi finns alltid nära till hands för att svara på frågor, hjälpa till i vardagen och se till att du har koll på läget i realtid. Med oss får du en redovisningspartner som inte bara hanterar siffrorna – utan förstår helheten.</p>
+                                <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Redovisning ska inte kännas som ett nödvändigt ont – det ska fungera, ge dig koll och frigöra tid till det som är viktigare. Hos oss får du en helhetslösning anpassad efter just din verksamhet. Vi sköter allt från bokföring av kvitton till löner, moms, bokslut och årsredovisning, på ett sätt som är både digitalt och personligt.<br><br></p>
+                                <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Vi tror inte på en standardlösning för alla. Istället vill vi lära känna dig och ditt företag på riktigt, så att vi kan anpassa vårt arbete efter dina behov. Vårt mål är att det ska vara enkelt för dig att driva ditt företag – och samtidigt känna dig trygg med att allt bakom kulisserna fungerar som det ska. Vi finns alltid nära till hands för att svara på frågor, hjälpa till i vardagen och se till att du har koll på läget i realtid. Med oss får du en redovisningspartner som inte bara hanterar siffrorna – utan förstår helheten.</p>
                             </div>
                         </div>
 
@@ -138,7 +138,8 @@
                             <div class="w-full px-8 py-12 bg-white rounded-t-none md:rounded-r-none md:rounded-l-4xl rounded-4xl">
                                 <h4 class="mb-8 text-center md:text-left tracking-tighter text-[#b25659] lg:text-4xl text-3xl font-league" aria-label="Våra tjänster">Rådgivning som gör skillnad.</h4>
                                 <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Att vara företagare innebär att ständigt behöva ta beslut – och det kan vara skönt att ha någon att bolla med längs vägen. Vi erbjuder rådgivning som är praktisk, insiktsfull och framför allt anpassad efter dig och din verksamhet. Oavsett om du precis har startat eller har varit i gång länge, så finns vi med som ett stöd i allt från uppstart och struktur till lönsamhet, planering och tillväxt.
-                                    <br><br>Vi jobbar nära våra kunder och bygger relationer som håller över tid. Ju mer vi vet om din vardag och dina mål, desto bättre kan vi hjälpa dig framåt. Det kan handla om att skapa bättre rutiner, tänka nytt kring affären eller analysera hur ditt företag mår just nu – men också om att våga ta nästa steg. Hos oss får du inte bara svar på dina frågor, utan en engagerad partner som vill att det ska gå bra för dig, på riktigt.
+
+                                    <br><br>Vi arbetar nära våra kunder och bygger relationer som håller över tid. Ju mer vi vet om din vardag och dina mål, desto bättre kan vi hjälpa dig framåt. Det kan handla om att skapa bättre rutiner, tänka nytt kring affären eller analysera hur ditt företag mår just nu – men också om att våga ta nästa steg. Hos oss får du inte bara svar på dina frågor, utan en engagerad partner som vill att det ska gå bra för dig, på riktigt.
                                     </p>
                             </div>
                         </div>
@@ -169,20 +170,20 @@
 
                         <div class="w-full px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
                             <!-- Grid -->
-                            <div class="grid gap-10 md:grid-cols-5">
-                                <div class="md:col-span-2">
+                            <div class="grid grid-cols-1 gap-10 md:grid-cols-5">
+                                <div class="col-span-full md:col-span-2">
                                     <div class="w-full md:max-w-xs ">
                                         <h2 class="text-4xl text-center md:text-left mb-8 tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våanliga frågor">Vanliga Frågor.</h2>
                                     </div>
                                 </div>
                                 <!-- End Col -->
 
-                                <div class="md:col-span-3">
+                                <div class="col-span-full md:col-span-3">
                                     <!-- Accordion -->
                                     <div class="divide-y divide-gray-200 hs-accordion-group">
 
                                         <!--ITEM-->
-                                        <div class="pb-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
                                             <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
                                                 Vad gör en redovisningsbyrå?
                                               <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
@@ -271,7 +272,7 @@
 
                                             <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
                                                 <p class="pt-2 text-gray-800 font-mont">
-                                                    Det är inget krav att ha en redovisningskonsult som företag, men alla företag kan gynnas av en redovisningskonsult. Därför rekommenderar vi alltid företag att ta hjälp av en redovisningsbyrå (självklart utan egen baktanke) men i olika utsträckning beroende på behov. Exempelvis kan mindre företag som inte själva har behov av en ekonomiavdelning anlita en redovisningsbyrå att sköta all redovisning för att slippa göra det själva medan ett större bolag kan anlita en redovisningsbyrå för stöd under bokslutsarbetet eller för att effektivisera befintliga ekonomiska processer. I vilken utsträckning vi hjälper våra kunder är alltid upp till kunden, boka in ett kostnadsfritt första möte så ser vi vad vi kan göra för just ditt företag.
+                                                    Det är inget krav att ha en redovisningskonsult som företag, men alla företag kan gynnas av en redovisningskonsult. Därför rekommenderar vi alltid företag att ta hjälp av en redovisningsbyrå men i olika utsträckning beroende på behov. Exempelvis kan mindre företag som inte själva har behov av en ekonomiavdelning anlita en redovisningsbyrå att sköta all redovisning för att slippa göra det själva medan ett större bolag kan anlita en redovisningsbyrå för stöd under bokslutsarbetet eller för att effektivisera befintliga ekonomiska processer. I vilken utsträckning vi hjälper våra kunder är alltid upp till kunden, boka in ett kostnadsfritt första möte så ser vi vad vi kan göra för just ditt företag.
                                                 </p>
                                             </div>
                                         </div>
@@ -427,8 +428,11 @@
 
                       <!-- Social Brands -->
                       <div class="space-x-2 text-center md:text-end">
-                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="https://www.linkedin.com/company/mera-konsultbyr%C3%A5-ab/">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-10 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="https://www.linkedin.com/company/mera-konsultbyr%C3%A5-ab/">
+                            <i class="text-lg fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="inline-flex items-center justify-center text-sm font-semibold text-gray-500 border border-transparent rounded-full size-10 gap-x-2 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="mailto:info@merakonsult.se">
+                            <i class="text-lg fa-solid fa-envelope"></i>
                         </a>
                       </div>
                       <!-- End Social Brands -->

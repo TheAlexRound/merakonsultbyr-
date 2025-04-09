@@ -99,11 +99,11 @@
             </nav>
         </header>
         <main class="flex flex-col w-full ">
-            <div class="flex flex-col w-full min-h-screen p-2 pt-4 bg-gray-100 md:p-10 gap-y-16">
+            <div class="flex flex-col w-full min-h-screen p-2 pt-4 mt-4 bg-gray-100 md:p-10 md:mt-0 gap-y-16">
                 <!--HERO-->
 
                 <!--MAIN CONTENT-->
-                <div class="max-w-[1500px] mx-auto w-full space-y-32 pt-12 bg-gray-100">
+                <div class="max-w-[1500px] mx-auto w-full space-y-32 py-12 bg-gray-100">
 
                     <!--HISTORY SECTION-->
                     <div class="flex flex-col gap-4 pt-12 pb-12 mb-20 ">

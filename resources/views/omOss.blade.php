@@ -172,7 +172,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col gap-4mb-24 ">
+                    <div class="flex flex-col gap-4 pt-8 mb-24 ">
                         <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] pb-4 lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Vårt team.</h2>
                         <div class="flex flex-col gap-12">
                             <!--CARD-->

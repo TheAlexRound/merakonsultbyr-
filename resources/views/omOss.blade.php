@@ -103,7 +103,7 @@
                 <!--HERO-->
 
                 <!--MAIN CONTENT-->
-                <div class="max-w-[1500px] mx-auto w-full space-y-32 py-12 bg-gray-100">
+                <div class="max-w-[1500px] mx-auto w-full space-y-32 mt-4 py-12 bg-gray-100">
 
                     <!--HISTORY SECTION-->
                     <div class="flex flex-col gap-4 pt-12 pb-12 mb-20 ">

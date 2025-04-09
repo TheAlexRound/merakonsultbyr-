@@ -107,7 +107,7 @@
 
                     <!--HISTORY SECTION-->
                     <div class="flex flex-col gap-4 py-12 pt-16 mb-20 md:pt-12">
-                        <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Om oss.</h2>
+                        <h2 class="text-4xl text-center md:text-left min-h-32 tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Om oss.</h2>
                         <div class="flex flex-col w-full gap-6 md:flex-row">
                             <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
                                 <p class="text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Vi är fyra engagerade redovisningskonsulter som efter flera års samarbete på olika byråer valde att gå ihop och starta vår egen – MERA Konsultbyrå. Sedan januari 2024 finns vi i Borås, med kunder i hela Sjuhäradsområdet. <br><br></p>
@@ -117,59 +117,60 @@
                             </div>
                             <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>
                         </div>
-                        <div class="grid w-full grid-cols-1 gap-8 p-6 mt-2 bg-white shadow-sm col-span-full sm:grid-cols-2 lg:grid-cols-4 rounded-4xl">
-                            <div class="flex flex-col items-center justify-center">
-                                <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Alexander Round</h4>
-                                <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Trevligt bemötande och otroligt kompetenta!"</p>
-                                <div class="flex items-start gap-1 pt-4">
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
+                            <!--REVIEWCARD-->
+                            <div class="grid w-full grid-cols-1 gap-8 p-6 mt-2 bg-white shadow-sm col-span-full sm:grid-cols-2 lg:grid-cols-4 rounded-4xl">
+                                <div class="flex flex-col items-center justify-center">
+                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
+                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Qia Hjelmäng</h4>
+                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">“Rekommenderar alla smarta företagare att välja MERA – både bokföring och coaching! De besitter bred kompetens och driv – ett måste för en företagare att ha i ryggen”</p>
+                                    <div class="flex items-start gap-1 pt-4">
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col items-center justify-center">
-                                <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Dani Eliya</h4>
-                                <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Enkel kommunikation, tydliga svar och snabb återkoppling."</p>
-                                <div class="flex items-start gap-1 pt-4">
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
+                                <div class="flex flex-col items-center justify-center">
+                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
+                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Tania Markarian</h4>
+                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"De är raka, tydliga och aldrig dömande – oavsett om jag glömt något eller ställer "dumma" frågor. Det gör att jag faktiskt vågar ta hjälp i tid."</p>
+                                    <div class="flex items-start gap-1 pt-4">
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col items-center justify-center">
-                                <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Yasir Jaafar</h4>
-                                <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Jättenöjd, alltid lätt att ha att göra med"</p>
-                                <div class="flex items-start gap-1 pt-4">
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
+                                <div class="flex flex-col items-center justify-center">
+                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
+                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Yasir Jaafar</h4>
+                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Jag gillar att jag kan släppa allt det administrativa och veta att de har koll. Det känns inte som ett stort företag med massa mellanled, behöver jag hjälp är det bara att ringa."</p>
+                                    <div class="flex items-start gap-1 pt-4">
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col items-center justify-center">
-                                <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
-                                <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Tania Markarian</h4>
-                                <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">"Supernöjd, rekommenderar starkt."</p>
-                                <div class="flex items-start gap-1 pt-4">
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
-                                    <i class="fa-solid fa-star text-[#b25659]"></i>
+                                <div class="flex flex-col items-center justify-center">
+                                    <i class="mb-4 text-2xl text-gray-800 fa-solid fa-user"></i>
+                                    <h4 class="text-lg font-bold text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Zoltán Sumi</h4>
+                                    <p class="text-center text-gray-800 font-mont" aria-label="Mera Konsultbyrå">“Mera Konsultbyrå ställer alltid upp för mig, är professionella och nogranna. Kan varmt rekommendera för alla som driver ett företag.”</p>
+                                    <div class="flex items-start gap-1 pt-4">
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                        <i class="fa-solid fa-star text-[#b25659]"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
 
                     <div class="flex flex-col gap-4 pt-8 mb-24 ">

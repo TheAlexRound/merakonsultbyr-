@@ -358,6 +358,13 @@
                                                         @enderror
                                                     </div>
                                                 </div>
+                                                <div>
+                                                    <!-- Google reCAPTCHA widget -->
+                                                    <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site_key') }}"></div>
+                                                    @if ($errors->has('g-recaptcha-response'))
+                                                        <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $errors->first('g-recaptcha-response') }}</p>
+                                                    @endif
+                                                </div>
                                             </div>
 
                                             <div class="mt-8">
@@ -546,5 +553,8 @@
                 document.getElementById("myForm").submit();
                 });
     </script>
+
+    <!-- Google reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </html>

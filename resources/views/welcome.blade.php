@@ -390,53 +390,62 @@
                                 <form method="POST" action="/form" id="myForm">
                                     @csrf
                                     <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
-                                    <!-- Card -->
-                                    <div class="flex flex-col p-4 bg-white shadow-lg sm:p-6 rounded-3xl">
-                                        <div class="text-center">
-                                            <h1 class="block text-2xl text-gray-800 font-league">Skicka in!</h1>
-                                        </div>
-                                        <div class="mt-4">
-                                            <div class="grid grid-cols-1 gap-4">
-                                                <div>
-                                                    <div class="w-full">
-                                                        <label for="name" class="block mb-2 text-sm font-medium font-mont">Namn</label>
-                                                        <input type="text" name="name" id="name" class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none" placeholder="John Svensson">
-                                                        @error('name')
-                                                            <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="w-full">
-                                                        <label for="email" class="block mb-2 text-sm font-medium font-mont">Mejladdress</label>
-                                                        <input type="email" name="email" id="email" class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none" placeholder="john@gmail.com">
-                                                        @error('email')
-                                                            <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="w-full">
-                                                        <label for="surname" class="block mb-2 text-sm font-medium font-mont">Meddelande</label>
-                                                        <textarea name="surname" id="surname" class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none h-20" placeholder="Meddelande"></textarea>@error('surname')
-                                                            <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
-                                                        @enderror
-                                                    </div>
-                                                </div>
+                                        <!-- Card -->
+                                        <div class="flex flex-col p-4 bg-white shadow-lg sm:p-6 rounded-3xl">
+                                            <div class="text-center">
+                                                <h1 class="block text-2xl text-gray-800 font-league">Skicka in!</h1>
                                             </div>
+                                            <div class="mt-4">
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div>
+                                                        <div class="w-full">
+                                                            <label for="name" class="block mb-2 text-sm font-medium font-mont">Namn</label>
+                                                            <input type="text" name="name" id="name" class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none" placeholder="John Svensson">
+                                                            @error('name')
+                                                                <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="w-full">
+                                                            <label for="email" class="block mb-2 text-sm font-medium font-mont">Mejladdress</label>
+                                                            <input type="email" name="email" id="email" class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none" placeholder="john@gmail.com">
+                                                            @error('email')
+                                                                <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="w-full">
+                                                            <label for="surname" class="block mb-2 text-sm font-medium font-mont">Meddelande</label>
+                                                            <textarea name="surname" id="surname" class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none h-20" placeholder="Meddelande"></textarea>
+                                                            @error('surname')
+                                                                <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <!-- Google reCAPTCHA widget -->
+                                                        <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site_key') }}"></div>
+                                                        @if ($errors->has('g-recaptcha-response'))
+                                                            <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $errors->first('g-recaptcha-response') }}</p>
+                                                        @endif
+                                                    </div>
+                                                </div>
 
-                                            <div class="mt-8">
-                                                <button type="submit" id="submitButton" class="inline-flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white bg-[#b25659] border border-transparent rounded-lg gap-x-2 hover:cursor-pointer focus:outline-hidden hover:scale-102 transition-all duration-300 disabled:opacity-50 font-mont disabled:pointer-events-none">Skicka</button>
+                                                <div class="mt-8">
+                                                    <button type="submit" id="submitButton" class="inline-flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white bg-[#b25659] border border-transparent rounded-lg gap-x-2 hover:cursor-pointer focus:outline-hidden hover:scale-102 transition-all duration-300 disabled:opacity-50 font-mont disabled:pointer-events-none">Skicka</button>
+                                                </div>
+                                                <div class="flex items-center py-2 my-4 text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6">Eller</div>
+                                                <div class="flex items-center justify-center w-full pb-2">
+                                                    <p class="text-sm text-gray-600">Kontakta specifik person?<a class="font-medium text-[#b25659] decoration-2 hover:underline focus:outline-hidden text-center focus:underline" href="/om-oss"> Läs mer här</a></p>
+                                                </div>
                                             </div>
-                                            <div class="flex items-center py-2 my-4 text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6">Eller</div>
-                                            <div class="flex items-center justify-center w-full pb-2">
-                                                <p class="text-sm text-gray-600">Kontakta specifik person?<a class="font-medium text-[#b25659] decoration-2 hover:underline focus:outline-hidden text-center focus:underline" href="/om-oss"> Läs mer här</a></p>
-                                            </div>
-
                                         </div>
-                                    </div>
                                     </div>
                                 </form>
+                                <!-- Google reCAPTCHA script -->
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                                 </div>
                             </div>
 

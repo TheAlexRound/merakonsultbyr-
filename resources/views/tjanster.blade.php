@@ -5,25 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Title with Relevant Keywords -->
-        <title>Tjänster från Mera Konsultbyrå - Redovisning, Bokföring & Skatteplanering</title>
-        <meta name="description" content="Mera Konsultbyrå erbjuder professionella redovisningstjänster, bokföring, bokslut och skatteplanering för företag i Sverige. Vi hjälper dig att växa och effektivisera din ekonomi.">
-        <meta name="keywords" content="tjänster, redovisningstjänster, bokföring, bokslut, skatteplanering, Mera Konsultbyrå, redovisningsbyrå, ekonomitjänster, företagsredovisning, ekonomisk rådgivning">
+        <title>Redovisningstjänster i Borås | Mera Konsultbyrå</title>
+        <meta name="description" content="Upptäck våra redovisningstjänster i Borås. Mera Konsultbyrå erbjuder bokföring, bokslut och skatteplanering för företag. Kontakta oss för en skräddarsydd lösning!">
+        <meta name="keywords" content="redovisningstjänster Borås, bokföring Borås, skatteplanering Borås, Mera Konsultbyrå">
+        <meta name="author" content="Mera Konsultbyrå">
+        <meta name="robots" content="index, follow">
 
-        <!-- Language Meta Tag (for Swedish content) -->
-        <meta name="language" content="Swedish">
-
-        <!-- Open Graph Tags for Social Media Sharing -->
-        <meta property="og:title" content="Tjänster från Mera Konsultbyrå - Redovisning, Bokföring & Skatteplanering">
-        <meta property="og:description" content="Mera Konsultbyrå erbjuder professionella redovisningstjänster, bokföring, bokslut och skatteplanering för företag i Sverige. Vi hjälper dig att växa och effektivisera din ekonomi.">
+        <!-- Open Graph (For social media sharing) -->
+        <meta property="og:title" content="Redovisningstjänster i Borås | Mera Konsultbyrå">
+        <meta property="og:description" content="Upptäck våra redovisningstjänster i Borås. Mera Konsultbyrå erbjuder bokföring, bokslut och skatteplanering för företag.">
         <meta property="og:image" content="{{ asset('img/logo.png') }}">
         <meta property="og:url" content="https://www.merakonsultbyra.se/tjanster">
         <meta property="og:type" content="website">
 
-        <!-- Twitter Card Tags for Twitter Sharing -->
-        <meta name="twitter:title" content="Tjänster från Mera Konsultbyrå - Redovisning, Bokföring & Skatteplanering">
-        <meta name="twitter:description" content="Mera Konsultbyrå erbjuder professionella redovisningstjänster, bokföring, bokslut och skatteplanering för företag i Sverige. Vi hjälper dig att växa och effektivisera din ekonomi.">
-        <meta name="twitter:image" content="{{ asset('img/logo.png') }}">
+        <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Redovisningstjänster i Borås | Mera Konsultbyrå">
+        <meta name="twitter:description" content="Upptäck våra redovisningstjänster i Borås. Mera Konsultbyrå erbjuder bokföring, bokslut och skatteplanering för företag.">
+        <meta name="twitter:image" content="{{ asset('img/logo.png') }}">
         <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
         <!-- Preconnect to improve performance -->
@@ -277,6 +276,66 @@
                                             </div>
                                         </div>
 
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Vad kan jag få hjälp med som företagare?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Allt från löpande bokföring och bokslut till smarta råd om hur du utvecklar din verksamhet. Vi finns här som bollplank – både för det dagliga och de stora besluten.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Måste jag ha koll på allt själv?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Nej, det är det som är grejen. Du fokuserar på det du gör bäst – så hjälper vi till med siffror, struktur och strategi.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Kan jag få rådgivning även om jag är nystartad?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                    Självklart! Ju tidigare du tar hjälp, desto bättre förutsättningar får du att växa hållbart från början.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!--ITEM-->
+                                        <div class="py-4 hs-accordion" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                            <button class="inline-flex items-center justify-between w-full text-lg font-bold text-gray-800 transition rounded-lg hover:cursor-pointer font-league hs-accordion-toggle group gap-x-3 md:text-xl text-start hover:text-gray-500 focus:outline-hidden focus:text-gray-500" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one" >
+                                                Erbjuder ni hjälp vid tillfälliga behov?
+                                                <svg class="block text-gray-600 hs-accordion-active:hidden shrink-0 size-5 group-hover:text-gray-500"xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                                <svg class="hidden text-gray-600 hs-accordion-active:block shrink-0 size-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                            </button>
+
+                                            <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                                <p class="pt-2 text-gray-800 font-mont">
+                                                   Ja! Vi kan rycka in som konsulter vid tillfälliga toppar, projekt eller om du bara vill ha en genomlysning av din ekonomi.
+                                                </p>
+                                            </div>
+                                        </div>
+
                                     <!-- End Accordion -->
                                     </div>
                                 <!-- End Col -->
@@ -449,38 +508,38 @@
         </main>
 
     <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".hs-accordion-toggle").forEach((button) => {
-      button.addEventListener("click", () => {
-        const parent = button.closest(".hs-accordion");
-        const content = parent.querySelector(".hs-accordion-content");
-        const arrows = button.querySelectorAll("svg");
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".hs-accordion-toggle").forEach((button) => {
+            button.addEventListener("click", () => {
+                const parent = button.closest(".hs-accordion");
+                const content = parent.querySelector(".hs-accordion-content");
+                const arrows = button.querySelectorAll("svg");
 
-        // Toggle active class
-        parent.classList.toggle("active");
+                // Toggle active class
+                parent.classList.toggle("active");
 
-        // Animate height
-        if (parent.classList.contains("active")) {
-          content.style.height = content.scrollHeight + "px";
-          button.setAttribute("aria-expanded", "true");
+                // Animate height
+                if (parent.classList.contains("active")) {
+                content.style.height = content.scrollHeight + "px";
+                button.setAttribute("aria-expanded", "true");
 
-          // Change arrow direction (down to up)
-          arrows[0].classList.add("hidden"); // Down arrow becomes hidden
-          arrows[1].classList.remove("hidden"); // Up arrow becomes visible
-        } else {
-          content.style.height = content.scrollHeight + "px"; // Set current height for transition
-          requestAnimationFrame(() => {
-            content.style.height = "0px"; // Collapse to 0 height
-          });
-          button.setAttribute("aria-expanded", "false");
+                // Change arrow direction (down to up)
+                arrows[0].classList.add("hidden"); // Down arrow becomes hidden
+                arrows[1].classList.remove("hidden"); // Up arrow becomes visible
+                } else {
+                content.style.height = content.scrollHeight + "px"; // Set current height for transition
+                requestAnimationFrame(() => {
+                    content.style.height = "0px"; // Collapse to 0 height
+                });
+                button.setAttribute("aria-expanded", "false");
 
-          // Change arrow direction (up to down)
-          arrows[1].classList.add("hidden"); // Up arrow becomes hidden
-          arrows[0].classList.remove("hidden"); // Down arrow becomes visible
-        }
-      });
-    });
-  });
+                // Change arrow direction (up to down)
+                arrows[1].classList.add("hidden"); // Up arrow becomes hidden
+                arrows[0].classList.remove("hidden"); // Down arrow becomes visible
+                }
+            });
+            });
+        });
             function scrollToSection(sectionId) {
                 const element = document.getElementById(sectionId);
                 const rect = element.getBoundingClientRect();

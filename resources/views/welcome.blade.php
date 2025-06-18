@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -7,24 +6,27 @@
         <meta name="language" content="sv">
 
         <!-- SEO Meta Tags -->
-        <title>Mera Konsultbyrå | Redovisning & Bokföring</title>
-        <meta name="description" content="Mera Konsultbyrå erbjuder professionella tjänster inom redovisning, bokföring och ekonomisk rådgivning i Sverige. Kontakta oss för skräddarsydda lösningar.">
-        <meta name="keywords" content="Mera Konsultbyrå, redovisning, bokföring, ekonomisk rådgivning, företagsekonomi, skatt, moms, konsult, Sverige">
+        <title>Redovisningsbyrå Borås | Mera Konsultbyrå</title>
+        <meta name="description" content="Mera Konsultbyrå är din redovisningsbyrå i Borås. Vi erbjuder tjänster inom redovisning, bokföring och skatteplanering för företag. Kontakta oss idag!">
+        <meta name="keywords" content="redovisningsbyrå Borås, bokföring Borås, skatteplanering Borås, Mera Konsultbyrå">
         <meta name="author" content="Mera Konsultbyrå">
         <meta name="robots" content="index, follow">
 
         <!-- Open Graph (For social media sharing) -->
-        <meta property="og:title" content="Mera Konsultbyrå | Redovisning & Bokföring">
-        <meta property="og:description" content="Vi erbjuder tjänster inom redovisning, bokföring och ekonomisk rådgivning för företag i Sverige.">
+        <meta property="og:title" content="Redovisningsbyrå Borås | Mera Konsultbyrå">
+        <meta property="og:description" content="Din redovisningsbyrå i Borås. Vi erbjuder tjänster inom redovisning, bokföring och skatteplanering för företag.">
         <meta property="og:image" content="{{ asset('img/logo.png') }}">
         <meta property="og:url" content="https://www.merakonsult.se">
         <meta property="og:type" content="website">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Mera Konsultbyrå | Redovisning & Bokföring">
-        <meta name="twitter:description" content="Vi erbjuder professionella tjänster inom redovisning, bokföring och ekonomisk rådgivning i Sverige.">
+        <meta name="twitter:title" content="Redovisningsbyrå Borås | Mera Konsultbyrå">
+        <meta name="twitter:description" content="Din redovisningsbyrå i Borås. Vi erbjuder tjänster inom redovisning, bokföring och skatteplanering för företag.">
         <meta name="twitter:image" content="{{ asset('img/logo.png') }}">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.merakonsult.se">
 
         <!-- Preconnect for Performance -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -122,10 +124,10 @@
 
                 <!--HERO-->
                 <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover border border-gray-200 shadow-xl rounded-4xl">
-                    <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl flex items-end p-8 pt-96 md:p-12 md:pt-72 lg:pt-96">
+                    <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl flex items-end p-8 pt-72 md:p-12 md:pt-72">
                         <div class="w-full border-4 border-[#b25659] py-8 border-x-0">
-                            <h1 class="text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Lite <a class="text-[#b25659]">mera</a> än bara redovisning</h1>
-                            <h2 class="text-lg tracking-tighter text-white md:text-2xl font-mont" aria-label="Mera Konsultbyrå">Med lång erfarenhet inom såväl redovisning och affärsutveckling som eget företagande hjälper vi entreprenörer bli bättre företagare. </h2>
+                            <h1 class="pb-1 text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Redovisning i Borås</h1>
+                            <h2 class="text-lg tracking-tighter text-white md:text-2xl font-mont" aria-label="Mera Konsultbyrå">Mera Konsultbyrå är inte din vanliga redovisningsbyrå. Självklart håller vi koll på både din bokföring och fakturering med över 20 års erfarenhet - men vi är också en aktiv, engagerad del av din resa. Som entreprenör och företagare får du någon att bolla tankar med, och en trygg samarbetspartner som alltid är på din sida. Genom att förstå din verksamhet och dina mål hjälper vi dig helt enkelt att ta rätt beslut i rätt tid - inte i efterhand.</h2>
                             <!--BUTTON 1-->
                             <button onclick="scrollToSection('CTA')" class="relative hover:cursor-pointer mt-8 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-[#b25659] rounded-full shadow-md group">
                                 <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease"><i class="text-white fa-solid fa-arrow-right"></i></span>
@@ -339,13 +341,14 @@
 
                     <!-- USP SECTION-->
                     <div class="flex flex-col gap-4 mb-32">
-                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Inte din vanliga redovisningskonsult.</h2>
+                        <h2 class="text-4xl tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league">Inte dina vanliga redovisningskonsulter</h2>
                         <div class="flex flex-col w-full gap-6 md:flex-row">
                             <div class="w-full p-8 bg-white shadow-sm rounded-4xl">
-                                <p class="text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Vi kan stolt säga att vi inte är din stereotypa redovisningskonsult. Hos oss handlar det om mer än bara bokföring och att skicka in rätt siffror i tid. Vi vill vara en aktiv del av din resa – någon du kan bolla idéer med, få stöd av och växa tillsammans med.
-                                    <br><br>Vi brinner för att hjälpa våra kunder på riktigt. Det betyder att vi inte nöjer oss med att bara ta emot dina papper – vi vill förstå din verksamhet, dina mål och dina utmaningar. Med regelbunden rådgivning, tydlig rapportering och ett nära samarbete kan vi hjälpa dig att fatta bättre beslut i rätt tid – inte i efterhand.
-                                    <br><br>Tillsammans ser vi till att ditt företagande blir både enklare, tryggare och mer lönsamt.
-                                    </p>
+                                <p class="text-gray-800 font-mont" aria-label="Mera Konsultbyrå">Vi kan med stolthet säga att vi inte är dina stereotypiska redovisningskonsulter. Hos oss handlar det om mer än bara bokföring eller att skicka in rätt siffror i tid. Vi vill vara en aktiv del av din resa – någon du kan bolla idéer med, få stöd av och växa tillsammans med.
+                                    <br><br>Som redovisningsbyrå i Borås brinner vi för att hjälpa våra kunder, på riktigt. Det betyder att vi inte nöjer oss med att bara ta emot dina papper – vi vill förstå din verksamhet, dina mål och dina utmaningar. Med regelbunden rådgivning, tydlig rapportering och ett nära samarbete kan vi hjälpa dig att fatta bättre beslut i rätt tid – inte i efterhand.
+                                    <br><br>Det gör att du kan fokusera på det du är bra på, själva verksamheten. Vi tror helhjärtat att när företagare och entreprenörer får rätt stöd och frihet, då följer ökad lönsamhet naturligt.
+                                    <br><br>Dessutom vet vi att när det går bra för er, då går det bra för oss också. Tillsammans ser vi till att ditt företagande blir både enklare, tryggare och mer lönsamt. Svårare än så behöver det inte vara.
+                                </p>
 
                             </div>
                             <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>

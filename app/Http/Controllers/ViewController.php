@@ -42,7 +42,7 @@ class ViewController extends Controller
             '/\$\d+|\d+\$/', // Money amounts
             '/[A-Z]{5,}/', // Excessive capitals
         ];
-        
+
         foreach ($spamPatterns as $pattern) {
             if (preg_match($pattern, $message) || preg_match($pattern, $request->input('name', ''))) {
                 return back()->withErrors(['form' => 'Your message contains inappropriate content. Please revise and try again.']);
@@ -52,13 +52,13 @@ class ViewController extends Controller
         $validated = $request->validate([
             'email' => 'required|email|max:255',
             'name' => 'required|string|max:255|min:2|regex:/^[A-Za-zÀ-ÿ\s]+$/',
-            'surname' => 'required|string|max:1000|min:10',
+            'surname' => 'required|string|max:1000|min:3',
             'g-recaptcha-response' => 'required',
             'form_timestamp' => 'required|numeric',
         ], [
             'name.regex' => 'Namn får endast innehålla bokstäver och mellanslag.',
             'name.min' => 'Namn måste vara minst 2 tecken.',
-            'surname.min' => 'Meddelandet måste vara minst 10 tecken.',
+            'surname.min' => 'Meddelandet måste vara minst 3 tecken.',
             'surname.max' => 'Meddelandet får inte överstiga 1000 tecken.',
             'g-recaptcha-response.required' => 'Vänligen bekräfta att du inte är en robot.',
         ]);
@@ -80,7 +80,7 @@ class ViewController extends Controller
         if (cache()->has($rateLimitKey)) {
             return back()->withErrors(['form' => 'För många försök. Vänligen vänta en minut innan du försöker igen.']);
         }
-        
+
         // Set rate limit (1 submission per minute per IP)
         cache()->put($rateLimitKey, true, 60);
 

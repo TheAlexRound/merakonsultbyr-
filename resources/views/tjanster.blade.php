@@ -33,7 +33,7 @@
         <script src="https://kit.fontawesome.com/55b1c7ce83.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        
+
         <!-- Google reCAPTCHA -->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -382,7 +382,7 @@
 
                                 </div>
 
-                                <div>
+                                <div id="contact-form-section">
                                 <!-- Form -->
                                 <form method="POST" action="/form" id="myForm">
                                     @csrf
@@ -392,27 +392,27 @@
                                         <div class="text-center">
                                             <h1 class="block text-2xl text-gray-800 font-league">Skicka in!</h1>
                                         </div>
-                                        
+
                                         <!-- Honeypot field - hidden from humans but visible to bots -->
                                         <div style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
                                             <label for="website">Website (leave blank)</label>
                                             <input type="text" name="website" id="website" value="" autocomplete="off" tabindex="-1">
                                         </div>
-                                        
+
                                         <!-- Timestamp field for time-based protection -->
                                         <input type="hidden" name="form_timestamp" value="{{ time() }}">
-                                        
+
                                         <div class="mt-4">
                                             <div class="grid grid-cols-1 gap-4">
                                                 <div>
                                                     <div class="w-full">
                                                         <label for="name" class="block mb-2 text-sm font-medium font-mont">Namn</label>
-                                                        <input type="text" name="name" id="name" 
-                                                               class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none" 
-                                                               placeholder="John Svensson" 
-                                                               required 
-                                                               maxlength="255" 
-                                                               pattern="[A-Za-zÀ-ÿ\s]{2,}" 
+                                                        <input type="text" name="name" id="name"
+                                                               class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none"
+                                                               placeholder="John Svensson"
+                                                               required
+                                                               maxlength="255"
+                                                               pattern="[A-Za-zÀ-ÿ\s]{2,}"
                                                                title="Namn måste innehålla minst 2 tecken och endast bokstäver">
                                                         @error('name')
                                                             <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
@@ -422,10 +422,10 @@
                                                 <div>
                                                     <div class="w-full">
                                                         <label for="email" class="block mb-2 text-sm font-medium font-mont">Mejladdress</label>
-                                                        <input type="email" name="email" id="email" 
-                                                               class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none" 
-                                                               placeholder="john@gmail.com" 
-                                                               required 
+                                                        <input type="email" name="email" id="email"
+                                                               class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none"
+                                                               placeholder="john@gmail.com"
+                                                               required
                                                                maxlength="255">
                                                         @error('email')
                                                             <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
@@ -435,11 +435,11 @@
                                                 <div>
                                                     <div class="w-full">
                                                         <label for="surname" class="block mb-2 text-sm font-medium font-mont">Meddelande</label>
-                                                        <textarea name="surname" id="surname" 
-                                                                  class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none h-20" 
-                                                                  placeholder="Meddelande" 
-                                                                  required 
-                                                                  maxlength="1000" 
+                                                        <textarea name="surname" id="surname"
+                                                                  class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none h-20"
+                                                                  placeholder="Meddelande"
+                                                                  required
+                                                                  maxlength="1000"
                                                                   minlength="10"></textarea>@error('surname')
                                                             <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
                                                         @enderror
@@ -579,6 +579,19 @@
                 });
             }
             document.addEventListener('DOMContentLoaded', function() {
+                // Auto-scroll to form if there are validation errors
+                @if ($errors->any())
+                    setTimeout(function() {
+                        const formSection = document.getElementById('contact-form-section');
+                        if (formSection) {
+                            formSection.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                        }
+                    }, 100); // Small delay to ensure page is fully loaded
+                @endif
+
                 const toggleButton = document.getElementById('navbar-toggle');
                 const menu = document.getElementById('navbar-menu');
 
@@ -623,7 +636,7 @@
 
             document.getElementById("submitButton").addEventListener("click", function(event) {
         event.preventDefault(); // Prevent immediate submission
-        
+
         let button = this;
         let originalText = button.innerHTML;
         let form = document.getElementById("myForm");
@@ -632,7 +645,7 @@
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let message = document.getElementById("surname").value;
-        
+
         // Check for common spam patterns
         let spamPatterns = [
             /\b(viagra|cialis|casino|poker|loan|credit|debt|bitcoin|crypto)\b/i,
@@ -640,7 +653,7 @@
             /[A-Z]{10,}/, // Too many consecutive capitals
             /(.)\1{5,}/, // Repeated characters
         ];
-        
+
         for (let pattern of spamPatterns) {
             if (pattern.test(name) || pattern.test(message)) {
                 alert('Your message contains inappropriate content. Please revise and try again.');

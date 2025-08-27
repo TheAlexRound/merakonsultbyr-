@@ -391,7 +391,7 @@
 
                                 </div>
 
-                                <div>
+                                <div id="contact-form-section">
                                 <!-- Form -->
                                 <form method="POST" action="/form" id="myForm">
                                     @csrf
@@ -560,6 +560,19 @@
             }
 
             document.addEventListener('DOMContentLoaded', function() {
+                // Auto-scroll to form if there are validation errors
+                @if ($errors->any())
+                    setTimeout(function() {
+                        const formSection = document.getElementById('contact-form-section');
+                        if (formSection) {
+                            formSection.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                        }
+                    }, 100); // Small delay to ensure page is fully loaded
+                @endif
+
                 const toggleButton = document.getElementById('navbar-toggle');
                 const menu = document.getElementById('navbar-menu');
 

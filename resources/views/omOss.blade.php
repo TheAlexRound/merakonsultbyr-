@@ -227,52 +227,6 @@
                             </div>
                             <!--CARD-->
                             <div class="flex flex-col w-full gap-12 bg-white shadow-sm md:flex-row rounded-4xl">
-                                <div style="background-image: url('/img/annie.jpg')" class="w-full max-w-64 mx-auto m-6 -mb-2 md:m-0 shadow-sm md:max-w-sm bg-[center_top_-1rem] bg-cover md:rounded-r-none md:rounded-l-4xl md:rounded-4xl aspect-square rounded-full"></div>
-                                <div class="flex flex-col gap-1 px-6 pt-0 pb-12 md:pt-12">
-                                    <div class="border-b-4 w-1/8 md:w-1/12 mb-2 border-[#b25659]"></div>
-                                    <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Redovisningskonsult</h4>
-                                    <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Annie Johansson</h3>
-                                    <div class="pt-4">
-                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Jag har alltid vetat att jag behöver ett jobb där det händer saker – där jag får tänka om, tänka nytt och samarbeta nära människor. Som redovisningskonsult får jag precis det. Ingen dag är den andra lik, och det är just det som gör att jag trivs så bra.</p>
-                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Tack vare alla olika typer av företag jag jobbar med får jag kliva in i nya situationer hela tiden. Ibland som bollplank, ibland som problemlösare – men alltid med målet att göra vardagen lite lättare för kunden. Med en ekonomiexamen i ryggen och erfarenhet från många olika branscher gillar jag att hitta lösningar som fungerar i praktiken.</p>
-                                    </div>
-                                    <div class="flex flex-col gap-4 pt-4 mt-auto -mb-2 sm:gap-10 md:flex-row">
-                                        <div class="flex items-center gap-2">
-                                            <i class="fa-solid fa-phone text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46 73-514 02 61</p>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="fa-solid fa-envelope text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">annie@merakonsult.se</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div class="flex flex-col w-full gap-12 bg-white shadow-sm md:flex-row rounded-4xl">
-                                <div style="background-image: url('/img/moa.jpg')" class="w-full max-w-64 mx-auto m-6 -mb-2 md:m-0 shadow-sm md:max-w-sm bg-[center_top_-1rem] bg-cover md:rounded-r-none md:rounded-l-4xl md:rounded-4xl aspect-square rounded-full"></div>
-                                <div class="flex flex-col gap-1 px-6 pt-0 pb-12 md:pt-12">
-                                    <div class="border-b-4 w-1/8 md:w-1/12 mb-2 border-[#b25659]"></div>
-                                    <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Redovisningskonsult</h4>
-                                    <h3 class="text-2xl tracking-tighter text-[#b25659] lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Moa Lagerqvist</h3>
-                                    <div class="pt-4">
-                                        <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Som en passionerad längdskidåkare vet jag att framgång inte kommer av sig själv. Hårt arbete, disciplin och en stark vilja är enligt mig viktiga kompetenser för att nå ditt man vill. Oavsett ditt mål, finns jag här för att stötta dig på din resa.</p>
-                                        <p class="mt-2 text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">Min dubbelexamen inom ekonomi och informatik har gett mig en gedigen grund inom både verksamhetsutveckling och ekonomi. Jag har erfarenhet av att arbeta med företagande och entreprenörskap, där jag ständigt söker nya sätt att effektivisera och förbättra. Det finns alltid smarta lösningar att hitta, bara man vågar be om hjälp.</p>
-                                    </div>
-                                    <div class="flex flex-col gap-4 pt-4 mt-auto -mb-2 sm:gap-10 md:flex-row">
-                                        <div class="flex items-center gap-2">
-                                            <i class="fa-solid fa-phone text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">+46 73-506 77 22</p>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <i class="fa-solid fa-envelope text-[#b25659]"></i>
-                                            <p class="text-gray-800 text- font-mont" aria-label="Mera Konsultbyrå">moa@merakonsult.se</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div class="flex flex-col w-full gap-12 bg-white shadow-sm md:flex-row rounded-4xl">
                                 <div style="background-image: url('/img/bosse.jpg')" class="w-full max-w-64 mx-auto m-6 -mb-2 md:m-0 shadow-sm md:max-w-sm bg-[center_top_-1rem] bg-cover md:rounded-r-none md:rounded-l-4xl md:rounded-4xl aspect-square rounded-full"></div>
                                 <div class="flex flex-col gap-1 px-6 pt-0 pb-12 md:pt-12">
                                     <div class="border-b-4 w-1/8 md:w-1/12 mb-2 border-[#b25659]"></div>

@@ -238,51 +238,12 @@
                                 </div>
                             </div>
                             <!--CARD-->
-                            <div style="background-image: url('/img/annie.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
-                                <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
-                                <div>
-                                    <h2 class="tracking-tighter text-white text-md md:text-xl font-mont" aria-label="Mera Konsultbyrå">Redovisningskonsult</h2>
-                                    <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Annie Johansson</h2>
-                                </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
-                            <div style="background-image: url('/img/moa.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
-                                <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
-                                <div>
-                                    <h2 class="tracking-tighter text-white text-md md:text-xl font-mont" aria-label="Mera Konsultbyrå">Redovisningskonsult</h2>
-                                    <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Moa Lagerqvist</h2>
-                                </div>
-                                </div>
-                            </div>
-                            <!--CARD-->
                             <div style="background-image: url('/img/bosse.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
                                 <div>
                                     <h2 class="tracking-tighter text-white text-md md:text-xl font-mont" aria-label="Mera Konsultbyrå">Glädjespridare</h2>
                                     <h2 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league">Bosse</h2>
                                 </div>
-                                </div>
-                            </div>
-                            <!--READ MORE CARD-->
-                            <div onclick="window.location.href='/om-oss'" class="hover:cursor-pointer group w-full min-h-48 col-span-1 bg-radial-[at_55%_25%] shadow-lg border border-gray-200  from-[#db8a8f] from-25% to-[#b25659] to-90% rounded-4xl px-6 py-6 flex flex-col hover:scale-102 transition-all duration-300 hover:shadow-3xl">
-
-                                <div  class="flex items-end justify-end w-full pb-6">
-                                    <div>
-                                        <img src="/img/mera-white.png" class="w-24 bg-cover" style="width:96px;">
-                                    </div>
-                                </div>
-                                <div class="flex items-center justify-around w-full md:pr-40">
-                                    <div class="flex flex-col items-center justify-center pb-4 md:pb-0">
-                                        <h2 class="text-4xl tracking-tighter text-center text-white lg:text-6xl md:text-5xl font-league" >20+</h2>
-                                        <h2 class="text-lg tracking-tighter text-center text-white md:text-xl font-mont" aria-label="Mera Konsultbyrå">Års erfarenhet</h2>
-                                    </div>
-                                </div>
-                                <div  class="flex items-end justify-end w-full">
-                                    <a href="#" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out bg-white rounded-full shadow-xl">
-                                        <span class="absolute inset-0 flex items-center rounded-4xl justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#b25659] group-hover:translate-x-0 ease">Läs mer<i class="ml-2 text-white fa-solid fa-arrow-right"></i></span>
-                                        <span class="absolute flex items-center justify-center w-full h-full text-xl tracking-tight text-[#b25659] transition-all duration-300 transform font-league group-hover:translate-x-full ease">Läs mer</span><span class="relative invisible">Våra tjänster</span>
-                                    </a>
                                 </div>
                             </div>
                             <!--REVIEWCARD-->

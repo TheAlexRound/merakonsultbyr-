@@ -327,6 +327,21 @@
                                                 </div>
                                                 <div>
                                                     <div class="w-full">
+                                                        <label for="phone" class="block mb-2 text-sm font-medium font-mont">Telefonnummer</label>
+                                                        <input type="tel" name="phone" id="phone"
+                                                               class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none"
+                                                               placeholder="070-123 45 67"
+                                                               required
+                                                               maxlength="20"
+                                                               pattern="^[\+]?[0-9\s\-\(\)]{7,20}$"
+                                                               title="Ange ett giltigt telefonnummer">
+                                                        @error('phone')
+                                                            <p class="block my-2 text-sm font-medium text-red-500 font-mont">{{ $message }}</p>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="w-full">
                                                         <label for="surname" class="block mb-2 text-sm font-medium font-mont">Meddelande</label>
                                                         <textarea name="surname" id="surname"
                                                                   class="py-2.5 font-mont sm:py-3 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-[#b25659] focus:ring-[#b25659] disabled:opacity-50 disabled:pointer-events-none h-20"
@@ -506,7 +521,15 @@
         // Additional client-side spam checks
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
         let message = document.getElementById("surname").value;
+
+        // Validate phone number format
+        let phonePattern = /^[\+]?[0-9\s\-\(\)]{7,20}$/;
+        if (!phonePattern.test(phone)) {
+            alert('Ange ett giltigt telefonnummer (ex: 070-123 45 67).');
+            return;
+        }
 
         // Check for common spam patterns
         let spamPatterns = [
@@ -517,7 +540,7 @@
         ];
 
         for (let pattern of spamPatterns) {
-            if (pattern.test(name) || pattern.test(message)) {
+            if (pattern.test(name) || pattern.test(message) || pattern.test(phone)) {
                 alert('Your message contains inappropriate content. Please revise and try again.');
                 return;
             }

@@ -14,16 +14,17 @@ class ContactForm extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $email, $name, $surname;
+    public $email, $name, $phone, $surname;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($email, $name, $surname)
+    public function __construct($email, $name, $surname, $phone)
     {
         $this->email = $email;
         $this->name = $name;
         $this->surname = $surname;
+        $this->phone = $phone;
     }
 
     /**

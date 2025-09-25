@@ -52,12 +52,17 @@ class ViewController extends Controller
         $validated = $request->validate([
             'email' => 'required|email|max:255',
             'name' => 'required|string|max:255|min:2|regex:/^[A-Za-zÀ-ÿ\s]+$/',
+            'phone' => 'required|string|max:20|min:7|regex:/^[\+]?[0-9\s\-\(\)]{7,20}$/',
             'surname' => 'required|string|max:1000|min:3',
             'g-recaptcha-response' => 'required',
             'form_timestamp' => 'required|numeric',
         ], [
             'name.regex' => 'Namn får endast innehålla bokstäver och mellanslag.',
             'name.min' => 'Namn måste vara minst 2 tecken.',
+            'phone.required' => 'Telefonnummer är obligatoriskt.',
+            'phone.regex' => 'Ange ett giltigt telefonnummer.',
+            'phone.min' => 'Telefonnummer måste vara minst 7 tecken.',
+            'phone.max' => 'Telefonnummer får inte överstiga 20 tecken.',
             'surname.min' => 'Meddelandet måste vara minst 3 tecken.',
             'surname.max' => 'Meddelandet får inte överstiga 1000 tecken.',
             'g-recaptcha-response.required' => 'Vänligen bekräfta att du inte är en robot.',
@@ -86,9 +91,10 @@ class ViewController extends Controller
 
         $email = $validated['email'];
         $name = $validated['name'];
+        $phone = $validated['phone'];
         $surname = $validated['surname'];
 
-        Mail::to('info@merakonsult.se')->send(new ContactForm($email, $name, $surname));
+        Mail::to('info@merakonsult.se')->send(new ContactForm($email, $name, $surname, $phone));
         return redirect()->route('welcome')->with('msg', 'Skickad! Vi hör av oss inom kort!');
     }
 }

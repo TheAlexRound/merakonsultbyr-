@@ -10,6 +10,7 @@
     <h3>{{$name}} har fyllt i formuläret på er hemsida!</h3>
     <h4>{{$surname}}</h4>
     <h4>Deras e-postadress: {{$email}}</h4>
+    <h4>Deras telefonnummer: {{$phone}}</h4>
     <p>-</p>
     <p>Snyggt jobbat!</p>
     <p>//Alexander - Aqueduct Software</p>

@@ -172,7 +172,7 @@
                             <!--CARD-->
 
                             <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/beskuren.jpg')" class="h-64 bg-bottom bg-cover rounded-b-none rounded-4xl">
+                                <div style="background-image: url('/img/beskuren.jpg')" class="h-64 bg-center bg-cover rounded-b-none rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
                                         <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Redovisning</h3>

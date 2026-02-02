@@ -118,7 +118,7 @@
                                     <br><br>Hos oss får du en personlig kontakt som förstår både siffror och företagande.
                                     </p>
                             </div>
-                            <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>
+                            <div style="background-image: url('/img/Forsta.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>
                         </div>
                             <!--REVIEWCARD-->
                             <div class="grid w-full grid-cols-1 gap-8 p-6 mt-2 bg-white shadow-sm col-span-full sm:grid-cols-2 lg:grid-cols-4 rounded-4xl">
@@ -227,7 +227,7 @@
                             </div>
                             <!--CARD-->
                             <div class="flex flex-col w-full gap-12 bg-white shadow-sm md:flex-row rounded-4xl">
-                                <div style="background-image: url('/img/bosse.jpg')" class="w-full max-w-64 mx-auto m-6 -mb-2 md:m-0 shadow-sm md:max-w-sm bg-[center_top_-1rem] bg-cover md:rounded-r-none md:rounded-l-4xl md:rounded-4xl aspect-square rounded-full"></div>
+                                <div style="background-image: url('/img/bosse-ny.jpg')" class="w-full max-w-64 mx-auto m-6 -mb-2 md:m-0 shadow-sm md:max-w-sm bg-[center_top_-1rem] bg-cover md:rounded-r-none md:rounded-l-4xl md:rounded-4xl aspect-square rounded-full"></div>
                                 <div class="flex flex-col gap-1 px-6 pt-0 pb-12 md:pt-12">
                                     <div class="border-b-4 w-1/8 md:w-1/12 mb-2 border-[#b25659]"></div>
                                     <h4 class="text-lg tracking-tighter text-gray-800 md:text-xl font-mont" aria-label="Mera Konsultbyrå">Glädjespridare</h4>

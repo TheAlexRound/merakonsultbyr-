@@ -68,7 +68,7 @@
             <nav class="mt-4 relative md:max-w-2xl w-full bg-white border border-gray-200 shadow-xl rounded-4xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto">
                 <div class="flex items-center justify-between px-4 md:px-0">
                     <div class="flex flex-col items-center">
-                        <img onclick="window.location.href='/'" src="/img/mera-red.png" class="object-contain w-24 h-auto hover:cursor-pointer" alt="" style="width:96px;">
+                        <img onclick="window.location.href='/'" src="/img/Forsta.jpg" class="object-contain w-24 h-auto hover:cursor-pointer" alt="" style="width:96px;">
                     </div>
 
                     <div class="md:hidden">
@@ -155,7 +155,7 @@
                         <div class="grid w-full grid-cols-1 md:grid-cols-[1fr_1.2fr_1fr] gap-6">
                             <!--CARD-->
                             <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/hero.jpg')" class="bg-center bg-cover rounded-b-none h-52 rounded-4xl">
+                                <div style="background-image: url('/img/rådgivning.jpg')" class="bg-center bg-cover rounded-b-none h-52 rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
                                         <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Rådgivning</h3>
@@ -172,7 +172,7 @@
                             <!--CARD-->
 
                             <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 transition-all duration-300 bg-white border border-gray-200 shadow-sm rounded-4xl group hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/laugh.jpg')" class="h-64 bg-bottom bg-cover rounded-b-none rounded-4xl">
+                                <div style="background-image: url('/img/beskuren.jpg')" class="h-64 bg-bottom bg-cover rounded-b-none rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
                                         <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Redovisning</h3>
@@ -190,7 +190,7 @@
                             </div>
                             <!--CARD-->
                             <div onclick="window.location.href='/tjanster'" class="w-full col-span-1 my-4 transition-all duration-300 bg-white border border-gray-200 shadow-sm group rounded-4xl hover:cursor-pointer hover:scale-102 hover:shadow-2xl">
-                                <div style="background-image: url('/img/type.jpg')" class="bg-cover rounded-b-none h-52 rounded-4xl">
+                                <div style="background-image: url('/img/skatt.jpg')" class="bg-cover rounded-b-none h-52 rounded-4xl">
                                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl px-6 py-4 flex flex-col justify-end rounded-b-none">
                                         <div class="border-b-4 w-1/6 md:w-1/8 mb-2 border-[#b25659]"></div>
                                         <h3 class="text-2xl tracking-tighter text-white lg:text-4xl md:text-3xl font-league" aria-label="Våra tjänster">Skatt</h3>
@@ -238,7 +238,7 @@
                                 </div>
                             </div>
                             <!--CARD-->
-                            <div style="background-image: url('/img/bosse.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
+                            <div style="background-image: url('/img/bosse-ny.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
                                 <div>
                                     <h2 class="tracking-tighter text-white text-md md:text-xl font-mont" aria-label="Mera Konsultbyrå">Glädjespridare</h2>
@@ -315,7 +315,7 @@
                                 </p>
 
                             </div>
-                            <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>
+                            <div style="background-image: url('/img/konsulter.jpg')" class="w-full bg-center bg-cover shadow-sm rounded-4xl"></div>
                         </div>
                     </div>
 

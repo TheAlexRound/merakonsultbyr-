@@ -112,7 +112,7 @@
                         <h2 class="text-4xl text-center md:text-left tracking-tighter text-[#b25659] lg:text-6xl md:text-5xl font-league" aria-label="Våra tjänster">Våra Tjänster.</h2>
                         <!--CARD-->
                         <div class="flex flex-col w-full border border-gray-200 shadow-sm md:flex-row rounded-4xl">
-                            <div style="background-image: url('/img/hero.jpg')" class="w-full bg-center bg-cover rounded-b-none md:rounded-l-4xl rounded-4xl rounded-t-4xl md:rounded-r-none">
+                            <div style="background-image: url('/img/beskuren.jpg')" class="w-full bg-center bg-cover rounded-b-none md:rounded-l-4xl rounded-4xl rounded-t-4xl md:rounded-r-none">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl rounded-b-none rounded-t-4xl md:rounded-r-none md:rounded-l-4xl flex justify-center items-center p-8">
                                     <div class="w-full flex flex-col gap-4 border-4 border-[#b25659] py-12 md:py-24 border-x-0">
                                         <h3 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league" aria-label="Redovisning">Redovisning</h3>
@@ -129,7 +129,7 @@
 
                         <!--CARD-->
                         <div class="flex flex-col w-full border border-gray-200 shadow-sm md:flex-row-reverse rounded-4xl">
-                            <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover rounded-b-none md:rounded-r-4xl rounded-4xl rounded-t-4xl md:rounded-l-none">
+                            <div style="background-image: url('/img/rådgivning.jpg')" class="w-full bg-center bg-cover rounded-b-none md:rounded-r-4xl rounded-4xl rounded-t-4xl md:rounded-l-none">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl rounded-b-none rounded-t-4xl md:rounded-l-none md:rounded-r-4xl flex justify-center items-center p-8">
                                     <div class="w-full flex flex-col gap-4 border-4 border-[#b25659] py-12 md:py-24 border-x-0">
                                         <h3 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league" aria-label="Redovisning">Rådgivning</h3>
@@ -148,7 +148,7 @@
 
                         <!--CARD-->
                         <div class="flex flex-col w-full border border-gray-200 shadow-sm md:flex-row rounded-4xl">
-                            <div style="background-image: url('/img/type.jpg')" class="w-full bg-center bg-cover rounded-b-none md:rounded-l-4xl rounded-4xl rounded-t-4xl md:rounded-r-none">
+                            <div style="background-image: url('/img/skatt.jpg')" class="w-full bg-center bg-cover rounded-b-none md:rounded-l-4xl rounded-4xl rounded-t-4xl md:rounded-r-none">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl rounded-b-none rounded-t-4xl md:rounded-r-none md:rounded-l-4xl flex justify-center items-center p-8">
                                     <div class="w-full flex flex-col gap-4 border-4 border-[#b25659] py-12 md:py-24 border-x-0">
                                         <h3 class="text-3xl tracking-tighter text-white lg:text-5xl md:text-4xl font-league" aria-label="Redovisning">Skatt</h3>

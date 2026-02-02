@@ -68,7 +68,7 @@
             <nav class="mt-4 relative md:max-w-2xl w-full bg-white border border-gray-200 shadow-xl rounded-4xl mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto">
                 <div class="flex items-center justify-between px-4 md:px-0">
                     <div class="flex flex-col items-center">
-                        <img onclick="window.location.href='/'" src="/img/Forsta.jpg" class="object-contain w-24 h-auto hover:cursor-pointer" alt="" style="width:96px;">
+                        <img onclick="window.location.href='/'" src="/img/mera-red.png" class="object-contain w-24 h-auto hover:cursor-pointer" alt="" style="width:96px;">
                     </div>
 
                     <div class="md:hidden">
@@ -126,7 +126,7 @@
                 @endif
 
                 <!--HERO-->
-                <div style="background-image: url('/img/point.jpg')" class="w-full bg-center bg-cover border border-gray-200 shadow-xl rounded-4xl">
+                <div style="background-image: url('/img/Forsta.jpg')" class="w-full bg-center bg-cover border border-gray-200 shadow-xl rounded-4xl">
                     <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-25% to-black to-90% opacity-95 rounded-4xl flex items-end p-8 pt-72 md:p-12 md:pt-72">
                         <div class="w-full border-4 border-[#b25659] py-8 border-x-0">
                             <h1 class="pb-1 text-5xl tracking-tighter text-white lg:text-7xl md:text-6xl font-league" aria-label="Mera Konsultbyrå">Redovisning i Borås</h1>
@@ -238,7 +238,7 @@
                                 </div>
                             </div>
                             <!--CARD-->
-                            <div style="background-image: url('/img/bosse-ny.jpg')" class="flex flex-col justify-between w-full bg-[center_top_-1rem] md:bg-[center_top_-2rem] lg:bg-[center_top_-6rem] bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
+                            <div style="background-image: url('/img/bosse-ny.jpg'); background-position: center; background-size: cover;" class="flex flex-col justify-between w-full bg-cover border border-gray-200 shadow-sm min-h-64 rounded-4xl">
                                 <div class="w-full h-full bg-radial-[at_150%_0%] from-transparent from-55% to-black to-90% opacity-95 rounded-4xl p-6 flex flex-col justify-end">
                                 <div>
                                     <h2 class="tracking-tighter text-white text-md md:text-xl font-mont" aria-label="Mera Konsultbyrå">Glädjespridare</h2>

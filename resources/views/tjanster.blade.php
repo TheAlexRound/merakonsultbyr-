@@ -547,6 +547,7 @@
                       <!-- End Social Brands -->
                     </div>
                     <!-- End Grid -->
+                    <p class="mt-6 text-sm text-center text-gray-500">Österlånggatan 59, 503 37 Borås</p>
             </footer>
         </main>
 
